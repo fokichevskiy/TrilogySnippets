@@ -9,7 +9,7 @@
 ---@param atY float 
 ---@param atZ float 
 ---@return player Player 
----Создаёт (спавнит) модель игрока в игровом мире
+---РЎРѕР·РґР°С‘С‚ (СЃРїР°РІРЅРёС‚) РјРѕРґРµР»СЊ РёРіСЂРѕРєР° РІ РёРіСЂРѕРІРѕРј РјРёСЂРµ
 function createPlayer( modelId,  atX,  atY,  atZ ) end
 
 ---@param pedtype int 
@@ -18,14 +18,14 @@ function createPlayer( modelId,  atX,  atY,  atZ ) end
 ---@param atY float 
 ---@param atZ float 
 ---@return ped Ped 
----Создает персонажа в заданных координатах с указанной моделью и поведением пешехо...
+---РЎРѕР·РґР°РµС‚ РїРµСЂСЃРѕРЅР°Р¶Р° РІ Р·Р°РґР°РЅРЅС‹С… РєРѕРѕСЂРґРёРЅР°С‚Р°С… СЃ СѓРєР°Р·Р°РЅРЅРѕР№ РјРѕРґРµР»СЊСЋ Рё РїРѕРІРµРґРµРЅРёРµРј РїРµС€РµС…Рѕ...
 function createChar( pedtype,  modelId,  atX,  atY,  atZ ) end
 
 ---@param ped Ped 
 ---@return positionX float 
 ---@return positionY float 
 ---@return positionZ float 
----Получает координаты актера
+---РџРѕР»СѓС‡Р°РµС‚ РєРѕРѕСЂРґРёРЅР°С‚С‹ Р°РєС‚РµСЂР°
 function getCharCoordinates( ped ) end
 
 ---@param ped Ped 
@@ -35,7 +35,7 @@ function getCharCoordinates( ped ) end
 ---@param cornerBY float 
 ---@param sphere bool 
 ---@return result bool 
----Проверяет, находится ли персонаж в указанной прямоугольной зоне
+---РџСЂРѕРІРµСЂСЏРµС‚, РЅР°С…РѕРґРёС‚СЃСЏ Р»Рё РїРµСЂСЃРѕРЅР°Р¶ РІ СѓРєР°Р·Р°РЅРЅРѕР№ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРѕР№ Р·РѕРЅРµ
 function isCharInArea2d( ped,  cornerAX,  cornerAY,  cornerBX,  cornerBY,  sphere ) end
 
 ---@param ped Ped 
@@ -47,7 +47,7 @@ function isCharInArea2d( ped,  cornerAX,  cornerAY,  cornerBX,  cornerBY,  spher
 ---@param cornerBZ float 
 ---@param sphere bool 
 ---@return result bool 
----Проверяет, находится ли персонаж в указанной кубической зоне
+---РџСЂРѕРІРµСЂСЏРµС‚, РЅР°С…РѕРґРёС‚СЃСЏ Р»Рё РїРµСЂСЃРѕРЅР°Р¶ РІ СѓРєР°Р·Р°РЅРЅРѕР№ РєСѓР±РёС‡РµСЃРєРѕР№ Р·РѕРЅРµ
 function isCharInArea3d( ped,  cornerAX,  cornerAY,  cornerAZ,  cornerBX,  cornerBY,  cornerBZ,  sphere ) end
 
 ---@param modelId Model 
@@ -55,14 +55,14 @@ function isCharInArea3d( ped,  cornerAX,  cornerAY,  cornerAZ,  cornerBX,  corne
 ---@param atY float 
 ---@param atZ float 
 ---@return car Vehicle 
----Создает транспорт на указанных координатах
+---РЎРѕР·РґР°РµС‚ С‚СЂР°РЅСЃРїРѕСЂС‚ РЅР° СѓРєР°Р·Р°РЅРЅС‹С… РєРѕРѕСЂРґРёРЅР°С‚Р°С…
 function createCar( modelId,  atX,  atY,  atZ ) end
 
 ---@param car carhandle 
 ---@return positionX float 
 ---@return positionY float 
 ---@return positionZ float 
----Получает координаты машины
+---РџРѕР»СѓС‡Р°РµС‚ РєРѕРѕСЂРґРёРЅР°С‚С‹ РјР°С€РёРЅС‹
 function getCarCoordinates( car ) end
 
 ---@param car Vehicle 
@@ -72,7 +72,7 @@ function getCarCoordinates( car ) end
 ---@param cornerBY float 
 ---@param sphere bool 
 ---@return result bool 
----Проверяет, находится ли транспорт в указанной прямоугольной зоне
+---РџСЂРѕРІРµСЂСЏРµС‚, РЅР°С…РѕРґРёС‚СЃСЏ Р»Рё С‚СЂР°РЅСЃРїРѕСЂС‚ РІ СѓРєР°Р·Р°РЅРЅРѕР№ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРѕР№ Р·РѕРЅРµ
 function isCarInArea2d( car,  cornerAX,  cornerAY,  cornerBX,  cornerBY,  sphere ) end
 
 ---@param car Vehicle 
@@ -84,13 +84,13 @@ function isCarInArea2d( car,  cornerAX,  cornerAY,  cornerBX,  cornerBY,  sphere
 ---@param cornerBZ float 
 ---@param sphere bool 
 ---@return result bool 
----Проверяет, находится ли транспорт в указанной кубической зоне
+---РџСЂРѕРІРµСЂСЏРµС‚, РЅР°С…РѕРґРёС‚СЃСЏ Р»Рё С‚СЂР°РЅСЃРїРѕСЂС‚ РІ СѓРєР°Р·Р°РЅРЅРѕР№ РєСѓР±РёС‡РµСЃРєРѕР№ Р·РѕРЅРµ
 function isCarInArea3d( car,  cornerAX,  cornerAY,  cornerAZ,  cornerBX,  cornerBY,  cornerBZ,  sphere ) end
 
 ---@param hours int 
 ---@param minutes int 
 ---@return minutes int 
----Получает остаток минут до указаного времени
+---РџРѕР»СѓС‡Р°РµС‚ РѕСЃС‚Р°С‚РѕРє РјРёРЅСѓС‚ РґРѕ СѓРєР°Р·Р°РЅРѕРіРѕ РІСЂРµРјРµРЅРё
 function getMinutesToTimeOfDay( hours,  minutes ) end
 
 ---@param sphereX float 
@@ -98,43 +98,43 @@ function getMinutesToTimeOfDay( hours,  minutes ) end
 ---@param sphereZ float 
 ---@param radius float 
 ---@return result bool 
----Проверяет находится ли точка на экране в заданном радиусе
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕРґРёС‚СЃСЏ Р»Рё С‚РѕС‡РєР° РЅР° СЌРєСЂР°РЅРµ РІ Р·Р°РґР°РЅРЅРѕРј СЂР°РґРёСѓСЃРµ
 function isPointOnScreen( sphereX,  sphereY,  sphereZ,  radius ) end
 
 ---@param ped Ped 
 ---@return car Vehicle 
----Получает хэндл машины в которой сидит персонаж
+---РџРѕР»СѓС‡Р°РµС‚ С…СЌРЅРґР» РјР°С€РёРЅС‹ РІ РєРѕС‚РѕСЂРѕР№ СЃРёРґРёС‚ РїРµСЂСЃРѕРЅР°Р¶
 function storeCarCharIsIn( ped ) end
 
 ---@param ped Ped 
 ---@param car Vehicle 
 ---@return result bool 
----Проверяет находится ли игрок в указанной машине
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕРґРёС‚СЃСЏ Р»Рё РёРіСЂРѕРє РІ СѓРєР°Р·Р°РЅРЅРѕР№ РјР°С€РёРЅРµ
 function isCharInCar( ped,  car ) end
 
 ---@param ped Ped 
 ---@param carModel Model 
 ---@return result bool 
----Проверяет находиться ли игрок в модели машины(Пример: 494 - Hotring)
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕРґРёС‚СЊСЃСЏ Р»Рё РёРіСЂРѕРє РІ РјРѕРґРµР»Рё РјР°С€РёРЅС‹(РџСЂРёРјРµСЂ: 494 - Hotring)
 function isCharInModel( ped,  carModel ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет находится ли игрок в любой машине
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕРґРёС‚СЃСЏ Р»Рё РёРіСЂРѕРє РІ Р»СЋР±РѕР№ РјР°С€РёРЅРµ
 function isCharInAnyCar( ped ) end
 
 ---@param player Player 
 ---@param key int 
 ---@return result bool 
----Возвращает true, если игрок нажимает указанную клавишу
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ true, РµСЃР»Рё РёРіСЂРѕРє РЅР°Р¶РёРјР°РµС‚ СѓРєР°Р·Р°РЅРЅСѓСЋ РєР»Р°РІРёС€Сѓ
 function isButtonPressed( player,  key ) end
 
 ---@param player Player 
 ---@param nKey int 
----Получает состояние кнопки геймпада
+---РџРѕР»СѓС‡Р°РµС‚ СЃРѕСЃС‚РѕСЏРЅРёРµ РєРЅРѕРїРєРё РіРµР№РјРїР°РґР°
 function getPadState( player,  nKey ) end
 
----Проверяет находится ли персонаж в радиусе координат
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕРґРёС‚СЃСЏ Р»Рё РїРµСЂСЃРѕРЅР°Р¶ РІ СЂР°РґРёСѓСЃРµ РєРѕРѕСЂРґРёРЅР°С‚
 function locateCharAnyMeans2d( ) end
 
 ---@param ped Ped 
@@ -144,7 +144,7 @@ function locateCharAnyMeans2d( ) end
 ---@param radiusY float 
 ---@param sphere bool 
 ---@return result bool 
----Проверяет есть ли в указаных 2d координатах с указаным радиусом пеший персонаж 
+---РџСЂРѕРІРµСЂСЏРµС‚ РµСЃС‚СЊ Р»Рё РІ СѓРєР°Р·Р°РЅС‹С… 2d РєРѕРѕСЂРґРёРЅР°С‚Р°С… СЃ СѓРєР°Р·Р°РЅС‹Рј СЂР°РґРёСѓСЃРѕРј РїРµС€РёР№ РїРµСЂСЃРѕРЅР°Р¶ 
 function locateCharOnFoot2d( ped,  pointX,  pointY,  radiusX,  radiusY,  sphere ) end
 
 ---@param ped Ped 
@@ -297,50 +297,50 @@ function locateCharInCarChar3d( ped,  nearPed,  radiusX,  radiusY,  radiusZ,  sp
 ---@param atY float 
 ---@param atZ float 
 ---@return object Object 
----Создает объект
+---РЎРѕР·РґР°РµС‚ РѕР±СЉРµРєС‚
 function createObject( model,  atX,  atY,  atZ ) end
 
 ---@return money int 
----Возвращает количество денег игрока
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ РґРµРЅРµРі РёРіСЂРѕРєР°
 function getPlayerMoney( ) end
 
 ---@param player Player 
 ---@param level int 
 ---@return result bool 
----Сравнивает уровень розыска, возвращает true если уровень розыска больше указаног...
+---РЎСЂР°РІРЅРёРІР°РµС‚ СѓСЂРѕРІРµРЅСЊ СЂРѕР·С‹СЃРєР°, РІРѕР·РІСЂР°С‰Р°РµС‚ true РµСЃР»Рё СѓСЂРѕРІРµРЅСЊ СЂРѕР·С‹СЃРєР° Р±РѕР»СЊС€Рµ СѓРєР°Р·Р°РЅРѕРі...
 function isWantedLevelGreater( player,  level ) end
 
 ---@param player Player 
 ---@return result bool 
----Проверяет мертв ли игрок
+---РџСЂРѕРІРµСЂСЏРµС‚ РјРµСЂС‚РІ Р»Рё РёРіСЂРѕРє
 function isPlayerDead( player ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет мертв ли персонаж
+---РџСЂРѕРІРµСЂСЏРµС‚ РјРµСЂС‚РІ Р»Рё РїРµСЂСЃРѕРЅР°Р¶
 function isCharDead( ped ) end
 
 ---@param car Vehicle 
 ---@return result bool 
----Проверяет взорвана ли машина
+---РџСЂРѕРІРµСЂСЏРµС‚ РІР·РѕСЂРІР°РЅР° Р»Рё РјР°С€РёРЅР°
 function isCarDead( car ) end
 
 ---@param player Player 
 ---@return result bool 
----Проверяет сигналит ли игрок в машине
+---РџСЂРѕРІРµСЂСЏРµС‚ СЃРёРіРЅР°Р»РёС‚ Р»Рё РёРіСЂРѕРє РІ РјР°С€РёРЅРµ
 function isPlayerPressingHorn( player ) end
 
 ---@param car Vehicle 
 ---@param pedtype Model 
 ---@param model int 
 ---@return ped Ped 
----Создает персонажа сидящем в машине на водительском сиденье
+---РЎРѕР·РґР°РµС‚ РїРµСЂСЃРѕРЅР°Р¶Р° СЃРёРґСЏС‰РµРј РІ РјР°С€РёРЅРµ РЅР° РІРѕРґРёС‚РµР»СЊСЃРєРѕРј СЃРёРґРµРЅСЊРµ
 function createCharInsideCar( car,  pedtype,  model ) end
 
 ---@param car Vehicle 
 ---@param model Model 
 ---@return result bool 
----Проверяет указанную машину на модель
+---РџСЂРѕРІРµСЂСЏРµС‚ СѓРєР°Р·Р°РЅРЅСѓСЋ РјР°С€РёРЅСѓ РЅР° РјРѕРґРµР»СЊ
 function isCarModel( car,  model ) end
 
 ---@param atX float 
@@ -385,45 +385,45 @@ function addBlipForCoordOld( atX,  atY,  atZ,  color,  flag ) end
 
 ---@param ped Ped 
 ---@return angle float 
----Возвращает Z-угол(поворот) персонажа
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ Z-СѓРіРѕР»(РїРѕРІРѕСЂРѕС‚) РїРµСЂСЃРѕРЅР°Р¶Р°
 function getCharHeading( ped ) end
 
 ---@param car Vehicle 
 ---@return angle float 
----Возвращает Z-угол(поворот) транспорта
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ Z-СѓРіРѕР»(РїРѕРІРѕСЂРѕС‚) С‚СЂР°РЅСЃРїРѕСЂС‚Р°
 function getCarHeading( car ) end
 
 ---@param object Object 
 ---@return angle float 
----Получает угол поворота объекта
+---РџРѕР»СѓС‡Р°РµС‚ СѓРіРѕР» РїРѕРІРѕСЂРѕС‚Р° РѕР±СЉРµРєС‚Р°
 function getObjectHeading( object ) end
 
 ---@param ped Ped 
 ---@param object Object 
 ---@return result bool 
----Узнает, касается ли персонаж объекта
+---РЈР·РЅР°РµС‚, РєР°СЃР°РµС‚СЃСЏ Р»Рё РїРµСЂСЃРѕРЅР°Р¶ РѕР±СЉРµРєС‚Р°
 function isCharTouchingObject( ped,  object ) end
 
 ---@param car carhandle 
 ---@return marker markerhandle 
----Создает маркер над автомобилем
+---РЎРѕР·РґР°РµС‚ РјР°СЂРєРµСЂ РЅР°Рґ Р°РІС‚РѕРјРѕР±РёР»РµРј
 function addBlipForCar( car ) end
 
 ---@param ped Ped 
 ---@return marker Marker 
----Добавляет маркер над персонажем
+---Р”РѕР±Р°РІР»СЏРµС‚ РјР°СЂРєРµСЂ РЅР°Рґ РїРµСЂСЃРѕРЅР°Р¶РµРј
 function addBlipForChar( ped ) end
 
 ---@param object objhandle 
 ---@return marker markerhandle 
----Создает маркер над объектом
+---РЎРѕР·РґР°РµС‚ РјР°СЂРєРµСЂ РЅР°Рґ РѕР±СЉРµРєС‚РѕРј
 function addBlipForObject( object ) end
 
 ---@param atX float 
 ---@param atY float 
 ---@param atZ float 
 ---@return checkpoint checkpointhandle 
----Создает маркер на указанных координатах
+---РЎРѕР·РґР°РµС‚ РјР°СЂРєРµСЂ РЅР° СѓРєР°Р·Р°РЅРЅС‹С… РєРѕРѕСЂРґРёРЅР°С‚Р°С…
 function addBlipForCoord( atX,  atY,  atZ ) end
 
 ---@param atX float 
@@ -435,7 +435,7 @@ function addContinuousSound( atX,  atY,  atZ,  sound ) end
 
 ---@param car Vehicle 
 ---@return result bool 
----Проверяет, не застрял ли автомобиль на крыше
+---РџСЂРѕРІРµСЂСЏРµС‚, РЅРµ Р·Р°СЃС‚СЂСЏР» Р»Рё Р°РІС‚РѕРјРѕР±РёР»СЊ РЅР° РєСЂС‹С€Рµ
 function isCarStuckOnRoof( car ) end
 
 ---@param ped Ped 
@@ -601,14 +601,14 @@ function locateStoppedCar3d( car,  sphereX,  sphereY,  sphereZ,  radiusX,  radiu
 ---@param player Player 
 ---@param canMove bool 
 ---@return result bool 
----Устанавливает возможность передвижения персонажа
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїРµСЂРµРґРІРёР¶РµРЅРёСЏ РїРµСЂСЃРѕРЅР°Р¶Р°
 function setPlayerControl( player,  canMove ) end
 
 ---@param weather int 
 ---@return result bool 
 function forceWeather( weather ) end
 
----Моментально устанавливает погоду
+---РњРѕРјРµРЅС‚Р°Р»СЊРЅРѕ СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РїРѕРіРѕРґСѓ
 function forceWeatherNow( ) end
 
 ---@param object Object 
@@ -616,7 +616,7 @@ function forceWeatherNow( ) end
 ---@return positionX float 
 ---@return positionY float 
 ---@return positionZ float 
----Возвращает координаты указанного объекта
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РєРѕРѕСЂРґРёРЅР°С‚С‹ СѓРєР°Р·Р°РЅРЅРѕРіРѕ РѕР±СЉРµРєС‚Р°
 function getObjectCoordinates( object ) end
 
 ---@param object Object 
@@ -624,18 +624,18 @@ function getObjectCoordinates( object ) end
 ---@param atY float 
 ---@param atZ float 
 ---@return result bool 
----Устанавливает указанный объект на указанные координаты
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СѓРєР°Р·Р°РЅРЅС‹Р№ РѕР±СЉРµРєС‚ РЅР° СѓРєР°Р·Р°РЅРЅС‹Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹
 function setObjectCoordinates( object,  atX,  atY,  atZ ) end
 
 ---@param player Player 
 ---@return result bool 
 ---@return level int 
----Возвращает текущий уровень розыска персонажа
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ С‚РµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ СЂРѕР·С‹СЃРєР° РїРµСЂСЃРѕРЅР°Р¶Р°
 function storeWantedLevel( player ) end
 
 ---@param car carhandle 
 ---@return result bool 
----Проверяет стоит ли машина на месте
+---РџСЂРѕРІРµСЂСЏРµС‚ СЃС‚РѕРёС‚ Р»Рё РјР°С€РёРЅР° РЅР° РјРµСЃС‚Рµ
 function isCarStopped( car ) end
 
 ---@param car Vehicle 
@@ -644,7 +644,7 @@ function isCarStopped( car ) end
 ---@param passengerSeat int 
 ---@return result bool 
 ---@return ped Ped 
----Создает персонажа сидящем в машине на пассажирском сидении
+---РЎРѕР·РґР°РµС‚ РїРµСЂСЃРѕРЅР°Р¶Р° СЃРёРґСЏС‰РµРј РІ РјР°С€РёРЅРµ РЅР° РїР°СЃСЃР°Р¶РёСЂСЃРєРѕРј СЃРёРґРµРЅРёРё
 function createCharAsPassenger( car,  pedtype,  model,  passengerSeat ) end
 
 ---@param gxtString GxtString 
@@ -680,41 +680,41 @@ function switchRoadsOn( cornerAX,  cornerAY,  cornerAZ,  cornerBX,  cornerBY,  c
 ---@param car Vehicle 
 ---@return result bool 
 ---@return passengers int 
----Возвращает количество пассажиров в автомобиле
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ РїР°СЃСЃР°Р¶РёСЂРѕРІ РІ Р°РІС‚РѕРјРѕР±РёР»Рµ
 function getNumberOfPassengers( car ) end
 
 ---@param car Vehicle 
 ---@return maxPassengers int 
----Возвращает максимальное количество пассажиров для данного транспортного средства
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РїР°СЃСЃР°Р¶РёСЂРѕРІ РґР»СЏ РґР°РЅРЅРѕРіРѕ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРіРѕ СЃСЂРµРґСЃС‚РІР°
 function getMaximumNumberOfPassengers( car ) end
 
 ---@param multiplier float 
 ---@return result bool 
 function setCarDensityMultiplier( multiplier ) end
 
----bool heavy утяжелить
+---bool heavy СѓС‚СЏР¶РµР»РёС‚СЊ
 function setCarHeavy( ) end
 
 ---@param car Vehicle 
 ---@return result bool 
----Проверяет, когда машина отрывается от земли.
+---РџСЂРѕРІРµСЂСЏРµС‚, РєРѕРіРґР° РјР°С€РёРЅР° РѕС‚СЂС‹РІР°РµС‚СЃСЏ РѕС‚ Р·РµРјР»Рё.
 function isCarInAirProper( car ) end
 
 ---@param car vehicle 
 ---@return result bool 
----Проверяет перевернута ли машина.
+---РџСЂРѕРІРµСЂСЏРµС‚ РїРµСЂРµРІРµСЂРЅСѓС‚Р° Р»Рё РјР°С€РёРЅР°.
 function isCarUpsidedown( car ) end
 
 ---@param player Player 
 ---@return result bool 
 ---@return ped Ped 
----Получает хэндл персонажа игрока
+---РџРѕР»СѓС‡Р°РµС‚ С…СЌРЅРґР» РїРµСЂСЃРѕРЅР°Р¶Р° РёРіСЂРѕРєР°
 function getPlayerChar( player ) end
 
 ---@param player Player 
 ---@param ignored bool 
 ---@return result bool 
----Устанавливает, должны ли полицейские игнорировать игрока независимо от уровня
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚, РґРѕР»Р¶РЅС‹ Р»Рё РїРѕР»РёС†РµР№СЃРєРёРµ РёРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ РёРіСЂРѕРєР° РЅРµР·Р°РІРёСЃРёРјРѕ РѕС‚ СѓСЂРѕРІРЅСЏ
 function setPoliceIgnorePlayer( player,  ignored ) end
 
 ---@param gxtString GxtString 
@@ -782,7 +782,7 @@ function locateCharInCarCar3d( ped,  car,  radiusX,  radiusY,  radiusZ,  flag ) 
 
 ---@param car Vehicle 
 ---@return result bool 
----Взрывает транспортное средство
+---Р’Р·СЂС‹РІР°РµС‚ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРµ СЃСЂРµРґСЃС‚РІРѕ
 function explodeCar( car ) end
 
 ---@param atX float 
@@ -790,7 +790,7 @@ function explodeCar( car ) end
 ---@param atZ float 
 ---@param radius int 
 ---@return result bool 
----Вызывает эффект взрыва на экране
+---Р’С‹Р·С‹РІР°РµС‚ СЌС„С„РµРєС‚ РІР·СЂС‹РІР° РЅР° СЌРєСЂР°РЅРµ
 function addExplosion( atX,  atY,  atZ,  radius ) end
 
 ---@param car Vehicle 
@@ -812,12 +812,12 @@ function hasPickupBeenCollected( pickup ) end
 
 ---@param pickup Pickup 
 ---@return result bool 
----Удаляет пикап
+---РЈРґР°Р»СЏРµС‚ РїРёРєР°Рї
 function removePickup( pickup ) end
 
 ---@param taxi vehicle 
 ---@param light bool 
----Устанавливает свечение шашки такси
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЃРІРµС‡РµРЅРёРµ С€Р°С€РєРё С‚Р°РєСЃРё
 function setTaxiLights( taxi,  light ) end
 
 ---@param gxtString GxtString 
@@ -834,24 +834,24 @@ function setTargetCarForMissionGarage( garage,  car ) end
 ---@param player Player 
 ---@param apply bool 
 ---@return result bool 
----Установить/Снять тормоза(невозможность двигаться) у авто
+---РЈСЃС‚Р°РЅРѕРІРёС‚СЊ/РЎРЅСЏС‚СЊ С‚РѕСЂРјРѕР·Р°(РЅРµРІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РґРІРёРіР°С‚СЊСЃСЏ) Сѓ Р°РІС‚Рѕ
 function applyBrakesToPlayersCar( player,  apply ) end
 
 ---@param ped Ped 
 ---@return health int 
----Получает здоровье персонажа
+---РџРѕР»СѓС‡Р°РµС‚ Р·РґРѕСЂРѕРІСЊРµ РїРµСЂСЃРѕРЅР°Р¶Р°
 function getCharHealth( ped ) end
 
 ---@param car Vehicle 
 ---@return health int 
----Получает состояние машины
+---РџРѕР»СѓС‡Р°РµС‚ СЃРѕСЃС‚РѕСЏРЅРёРµ РјР°С€РёРЅС‹
 function getCarHealth( car ) end
 
 ---@param car carhandle 
 ---@param primaryColor int 
 ---@param secondaryColor int 
 ---@return result bool 
----Меняет цвет машины
+---РњРµРЅСЏРµС‚ С†РІРµС‚ РјР°С€РёРЅС‹
 function changeCarColour( car,  primaryColor,  secondaryColor ) end
 
 ---@param ped Ped 
@@ -869,7 +869,7 @@ function isPlayerInRemoteMode( player ) end
 
 ---@param modelId Model 
 ---@return result bool 
----Проверяет загружена ли модель
+---РџСЂРѕРІРµСЂСЏРµС‚ Р·Р°РіСЂСѓР¶РµРЅР° Р»Рё РјРѕРґРµР»СЊ
 function hasModelLoaded( modelId ) end
 
 ---@param player Player 
@@ -890,7 +890,7 @@ function createObjectNoOffset( modelId,  atX,  atY,  atZ ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет двигается ли игрок
+---РџСЂРѕРІРµСЂСЏРµС‚ РґРІРёРіР°РµС‚СЃСЏ Р»Рё РёРіСЂРѕРє
 function isCharStopped( ped ) end
 
 ---@param atX float 
@@ -900,12 +900,12 @@ function isCharStopped( ped ) end
 ---@return marker Marker 
 function addSpriteBlipForContactPoint( atX,  atY,  atZ,  icon ) end
 
----Ставит спрайт на координаты 3д со своим типом.
+---РЎС‚Р°РІРёС‚ СЃРїСЂР°Р№С‚ РЅР° РєРѕРѕСЂРґРёРЅР°С‚С‹ 3Рґ СЃРѕ СЃРІРѕРёРј С‚РёРїРѕРј.
 function addSpriteBlipForCoord( ) end
 
 ---@param car Vehicle 
 ---@return result bool 
----Проверяет находиться ли машина в воде
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕРґРёС‚СЊСЃСЏ Р»Рё РјР°С€РёРЅР° РІ РІРѕРґРµ
 function isCarInWater( car ) end
 
 ---@param closestToX float 
@@ -926,24 +926,24 @@ function getClosestCarNode( closestToX,  closestToY,  closestToZ ) end
 
 ---@param car Vehicle 
 ---@return result bool 
----Проверяет видна ли машина
+---РџСЂРѕРІРµСЂСЏРµС‚ РІРёРґРЅР° Р»Рё РјР°С€РёРЅР°
 function isCarOnScreen( car ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет виден ли персонаж
+---РџСЂРѕРІРµСЂСЏРµС‚ РІРёРґРµРЅ Р»Рё РїРµСЂСЃРѕРЅР°Р¶
 function isCharOnScreen( ped ) end
 
 ---@param object Object 
 ---@return result bool 
----Проверяет виден ли объект
+---РџСЂРѕРІРµСЂСЏРµС‚ РІРёРґРµРЅ Р»Рё РѕР±СЉРµРєС‚
 function isObjectOnScreen( object ) end
 
 ---@param atX float 
 ---@param atY float 
 ---@param atZ float 
 ---@return z float 
----Находит высоту относительно 3д координат
+---РќР°С…РѕРґРёС‚ РІС‹СЃРѕС‚Сѓ РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕ 3Рґ РєРѕРѕСЂРґРёРЅР°С‚
 function getGroundZFor3dCoord( atX,  atY,  atZ ) end
 
 ---@param atX float 
@@ -965,13 +965,13 @@ function isScriptFireExtinguished( fire ) end
 ---@param cornerBY float 
 ---@param weapon int 
 ---@return result bool 
----Проверяет выстрелил ли персонаж в заданной зоне
+---РџСЂРѕРІРµСЂСЏРµС‚ РІС‹СЃС‚СЂРµР»РёР» Р»Рё РїРµСЂСЃРѕРЅР°Р¶ РІ Р·Р°РґР°РЅРЅРѕР№ Р·РѕРЅРµ
 function isCharShootingInArea( ped,  cornerAX,  cornerAY,  cornerBX,  cornerBY,  weapon ) end
 
 ---@param ped Ped 
 ---@param weapon int 
 ---@return result bool 
----Проверяет держит ли игрок в руках указанное оружие
+---РџСЂРѕРІРµСЂСЏРµС‚ РґРµСЂР¶РёС‚ Р»Рё РёРіСЂРѕРє РІ СЂСѓРєР°С… СѓРєР°Р·Р°РЅРЅРѕРµ РѕСЂСѓР¶РёРµ
 function isCurrentCharWeapon( ped,  weapon ) end
 
 ---@param zone GxtString 
@@ -983,7 +983,7 @@ function getRandomCharInZone( zone,  pedtype,  gang,  criminal_prostitute ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет выстрелил ли персонаж
+---РџСЂРѕРІРµСЂСЏРµС‚ РІС‹СЃС‚СЂРµР»РёР» Р»Рё РїРµСЂСЃРѕРЅР°Р¶
 function isCharShooting( ped ) end
 
 ---@param atX float 
@@ -996,7 +996,7 @@ function createMoneyPickup( atX,  atY,  atZ,  cash,  permanenceFlag ) end
 
 ---@param car Vehicle 
 ---@return speed float 
----Получает скорость машины по ее хендлу
+---РџРѕР»СѓС‡Р°РµС‚ СЃРєРѕСЂРѕСЃС‚СЊ РјР°С€РёРЅС‹ РїРѕ РµРµ С…РµРЅРґР»Сѓ
 function getCarSpeed( car ) end
 
 ---@param modelId Model 
@@ -1015,7 +1015,7 @@ function isProjectileInArea( cornerAX,  cornerAY,  cornerAZ,  cornerBX,  cornerB
 ---@param ped pedhandle 
 ---@param model model 
 ---@return result bool 
----Сверяет модель персонажа с указанной
+---РЎРІРµСЂСЏРµС‚ РјРѕРґРµР»СЊ РїРµСЂСЃРѕРЅР°Р¶Р° СЃ СѓРєР°Р·Р°РЅРЅРѕР№
 function isCharModel( ped,  model ) end
 
 ---@param car Vehicle 
@@ -1029,23 +1029,23 @@ function getCarForwardY( car ) end
 ---@param ped Ped 
 ---@param weapon int 
 ---@return result bool 
----Проверяет с указанного оружия было попадание по персонажу
+---РџСЂРѕРІРµСЂСЏРµС‚ СЃ СѓРєР°Р·Р°РЅРЅРѕРіРѕ РѕСЂСѓР¶РёСЏ Р±С‹Р»Рѕ РїРѕРїР°РґР°РЅРёРµ РїРѕ РїРµСЂСЃРѕРЅР°Р¶Сѓ
 function hasCharBeenDamagedByWeapon( ped,  weapon ) end
 
 ---@param car Vehicle 
 ---@param weapon int 
 ---@return result bool 
----Проверяет с указанного ли оружия было попадание в машину
+---РџСЂРѕРІРµСЂСЏРµС‚ СЃ СѓРєР°Р·Р°РЅРЅРѕРіРѕ Р»Рё РѕСЂСѓР¶РёСЏ Р±С‹Р»Рѕ РїРѕРїР°РґР°РЅРёРµ РІ РјР°С€РёРЅСѓ
 function hasCarBeenDamagedByWeapon( car,  weapon ) end
 
 ---@param car Vehicle 
 ---@return fire int 
----Заставляет вашу машину гореть.
+---Р—Р°СЃС‚Р°РІР»СЏРµС‚ РІР°С€Сѓ РјР°С€РёРЅСѓ РіРѕСЂРµС‚СЊ.
 function startCarFire( car ) end
 
 ---@param ped Ped 
 ---@return fire int 
----Заставляет персонажа гореть.
+---Р—Р°СЃС‚Р°РІР»СЏРµС‚ РїРµСЂСЃРѕРЅР°Р¶Р° РіРѕСЂРµС‚СЊ.
 function startCharFire( ped ) end
 
 ---@param cornerAX float 
@@ -1099,7 +1099,7 @@ function rotateObject( object,  fromAngle,  toAngle,  flag ) end
 ---@param speedZ float 
 ---@param collisionCheck bool 
 ---@return result bool 
----Передвигает объект до указанных координат
+---РџРµСЂРµРґРІРёРіР°РµС‚ РѕР±СЉРµРєС‚ РґРѕ СѓРєР°Р·Р°РЅРЅС‹С… РєРѕРѕСЂРґРёРЅР°С‚
 function slideObject( object,  toX,  toY,  toZ,  speedX,  speedY,  speedZ,  collisionCheck ) end
 
 ---@param explosionType int 
@@ -1125,7 +1125,7 @@ function hasObjectBeenDamaged( object ) end
 ---@param atY float 
 ---@param atZ float 
 ---@return ped Ped 
----Создает персонажа в заданных координатах с рандомной моделью и поведением пешехода
+---РЎРѕР·РґР°РµС‚ РїРµСЂСЃРѕРЅР°Р¶Р° РІ Р·Р°РґР°РЅРЅС‹С… РєРѕРѕСЂРґРёРЅР°С‚Р°С… СЃ СЂР°РЅРґРѕРјРЅРѕР№ РјРѕРґРµР»СЊСЋ Рё РїРѕРІРµРґРµРЅРёРµРј РїРµС€РµС…РѕРґР°
 function createRandomChar( atX,  atY,  atZ ) end
 
 ---@param float1 float 
@@ -1156,7 +1156,7 @@ function loadTextureDictionary( txd ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет является ли персонаж мужским
+---РџСЂРѕРІРµСЂСЏРµС‚ СЏРІР»СЏРµС‚СЃСЏ Р»Рё РїРµСЂСЃРѕРЅР°Р¶ РјСѓР¶СЃРєРёРј
 function isCharMale( ped ) end
 
 ---@param garage GxtString 
@@ -1176,7 +1176,7 @@ function addSphere( atX,  atY,  atZ,  radius ) end
 
 ---@param ped Ped 
 ---@return car Vehicle 
----Возвращает хендл машины, используемый педом
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ С…РµРЅРґР» РјР°С€РёРЅС‹, РёСЃРїРѕР»СЊР·СѓРµРјС‹Р№ РїРµРґРѕРј
 function storeCarCharIsInNoSave( ped ) end
 
 ---@param car Vehicle 
@@ -1185,7 +1185,7 @@ function isCarVisiblyDamaged( car ) end
 
 ---@param object Object 
 ---@return result bool 
----Проверяет, существует ли объект, возвращает true если объект существует
+---РџСЂРѕРІРµСЂСЏРµС‚, СЃСѓС‰РµСЃС‚РІСѓРµС‚ Р»Рё РѕР±СЉРµРєС‚, РІРѕР·РІСЂР°С‰Р°РµС‚ true РµСЃР»Рё РѕР±СЉРµРєС‚ СЃСѓС‰РµСЃС‚РІСѓРµС‚
 function doesObjectExist( object ) end
 
 ---@param car Vehicle 
@@ -1216,7 +1216,7 @@ function hasImportGarageSlotBeenFilled( int1,  int2 ) end
 
 ---@param pickup pickuphandle 
 ---@return marker markerhandle 
----Создает маркер над пикапом
+---РЎРѕР·РґР°РµС‚ РјР°СЂРєРµСЂ РЅР°Рґ РїРёРєР°РїРѕРј
 function addBlipForPickup( pickup ) end
 
 ---@param player Player 
@@ -1226,7 +1226,7 @@ function isPlayerControllable( player ) end
 ---@param car carhandle 
 ---@return primaryColor int 
 ---@return secondaryColor int 
----Получает цвета автомобиля
+---РџРѕР»СѓС‡Р°РµС‚ С†РІРµС‚Р° Р°РІС‚РѕРјРѕР±РёР»СЏ
 function getCarColours( car ) end
 
 ---@param object Object 
@@ -1250,7 +1250,7 @@ function getOffsetFromCarInWorldCoords( car,  offsetX,  offsetY,  offsetZ ) end
 ---@param ped Ped 
 ---@param int int 
 ---@return ammo int 
----Получает количество патронов у персонажа
+---РџРѕР»СѓС‡Р°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ РїР°С‚СЂРѕРЅРѕРІ Сѓ РїРµСЂСЃРѕРЅР°Р¶Р°
 function getAmmoInCharWeapon( ped,  int ) end
 
 ---@param meters float 
@@ -1264,40 +1264,40 @@ function convertMetresToFeetInt( metric ) end
 ---@param car vehicle 
 ---@param seat int 
 ---@return result bool 
----Проверяет, доступно ли пассажирское сидение
+---РџСЂРѕРІРµСЂСЏРµС‚, РґРѕСЃС‚СѓРїРЅРѕ Р»Рё РїР°СЃСЃР°Р¶РёСЂСЃРєРѕРµ СЃРёРґРµРЅРёРµ
 function isCarPassengerSeatFree( car,  seat ) end
 
 ---@param car Vehicle 
 ---@param seat int 
 ---@return ped Ped 
----Получает хэндл игрока, который сидит на сидении транспортного средства
+---РџРѕР»СѓС‡Р°РµС‚ С…СЌРЅРґР» РёРіСЂРѕРєР°, РєРѕС‚РѕСЂС‹Р№ СЃРёРґРёС‚ РЅР° СЃРёРґРµРЅРёРё С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРіРѕ СЃСЂРµРґСЃС‚РІР°
 function getCharInCarPassengerSeat( car,  seat ) end
 
 ---@param veh Vehicle 
 ---@return modelId Model 
----Возвращает ID транспорта по хендл машины
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ ID С‚СЂР°РЅСЃРїРѕСЂС‚Р° РїРѕ С…РµРЅРґР» РјР°С€РёРЅС‹
 function getCarModel( veh ) end
 
 ---@param ped Ped 
 ---@param car Vehicle 
 ---@return result bool 
----Проверяет, сидит ли хэндл в указанном т/c
+---РџСЂРѕРІРµСЂСЏРµС‚, СЃРёРґРёС‚ Р»Рё С…СЌРЅРґР» РІ СѓРєР°Р·Р°РЅРЅРѕРј С‚/c
 function isCharSittingInCar( ped,  car ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет находится ли хэндл в любом т/c
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕРґРёС‚СЃСЏ Р»Рё С…СЌРЅРґР» РІ Р»СЋР±РѕРј С‚/c
 function isCharSittingInAnyCar( ped ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет не находится ли персонаж в транспорте.
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅРµ РЅР°С…РѕРґРёС‚СЃСЏ Р»Рё РїРµСЂСЃРѕРЅР°Р¶ РІ С‚СЂР°РЅСЃРїРѕСЂС‚Рµ.
 function isCharOnFoot( ped ) end
 
 ---@param player Player 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет, целится ли игрок в конкретного персонажа.
+---РџСЂРѕРІРµСЂСЏРµС‚, С†РµР»РёС‚СЃСЏ Р»Рё РёРіСЂРѕРє РІ РєРѕРЅРєСЂРµС‚РЅРѕРіРѕ РїРµСЂСЃРѕРЅР°Р¶Р°.
 function isPlayerTargettingChar( player,  ped ) end
 
 ---@param player Player 
@@ -1319,7 +1319,7 @@ function getRandomCopInArea( float1,  float2,  float3,  float4,  int5,  int6,  i
 
 ---@param car Vehicle 
 ---@return ped Ped 
----Возвращает водителя указанного транспортного средства
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РІРѕРґРёС‚РµР»СЏ СѓРєР°Р·Р°РЅРЅРѕРіРѕ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРіРѕ СЃСЂРµРґСЃС‚РІР°
 function getDriverOfCar( car ) end
 
 ---@param ped Ped 
@@ -1328,7 +1328,7 @@ function getNumberOfFollowers( ped ) end
 
 ---@param ped Ped 
 ---@return weapon int 
----Получает оружие находящееся в руках у персонажа
+---РџРѕР»СѓС‡Р°РµС‚ РѕСЂСѓР¶РёРµ РЅР°С…РѕРґСЏС‰РµРµСЃСЏ РІ СЂСѓРєР°С… Сѓ РїРµСЂСЃРѕРЅР°Р¶Р°
 function getCurrentCharWeapon( ped ) end
 
 ---@param ped Ped 
@@ -1384,7 +1384,7 @@ function locateCharInCarObject3d( ped,  object,  radiusX,  radiusY,  radiusZ,  s
 
 ---@param ped Ped 
 ---@return result bool 
----Возвращает true если пед находится на мотоцикле/велосипеде
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ true РµСЃР»Рё РїРµРґ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РјРѕС‚РѕС†РёРєР»Рµ/РІРµР»РѕСЃРёРїРµРґРµ
 function isCharOnAnyBike( ped ) end
 
 ---@param ped Ped 
@@ -1398,20 +1398,20 @@ function getRemoteControlledCar( player ) end
 
 ---@param model model 
 ---@return result bool 
----Проверяет доступна ли модель для использования
+---РџСЂРѕРІРµСЂСЏРµС‚ РґРѕСЃС‚СѓРїРЅР° Р»Рё РјРѕРґРµР»СЊ РґР»СЏ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ
 function isModelAvailable( model ) end
 
 ---@param pickupX float 
 ---@param pickupY float 
 ---@param pickupZ float 
 ---@return result bool 
----Проверяет есть ли на указанных координатах любой пикап
+---РџСЂРѕРІРµСЂСЏРµС‚ РµСЃС‚СЊ Р»Рё РЅР° СѓРєР°Р·Р°РЅРЅС‹С… РєРѕРѕСЂРґРёРЅР°С‚Р°С… Р»СЋР±РѕР№ РїРёРєР°Рї
 function isAnyPickupAtCoords( pickupX,  pickupY,  pickupZ ) end
 
 ---@param ped Ped 
 ---@param weapon int 
 ---@return result bool 
----Проверяет наличие указанного оружия у персонажа
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°Р»РёС‡РёРµ СѓРєР°Р·Р°РЅРЅРѕРіРѕ РѕСЂСѓР¶РёСЏ Сѓ РїРµСЂСЃРѕРЅР°Р¶Р°
 function hasCharGotWeapon( ped,  weapon ) end
 
 ---@param joystick int 
@@ -1423,13 +1423,13 @@ function getPositionOfAnalogueSticks( joystick ) end
 
 ---@param car Vehicle 
 ---@return state bool 
----Проверяет, горит ли автомобиль.
+---РџСЂРѕРІРµСЂСЏРµС‚, РіРѕСЂРёС‚ Р»Рё Р°РІС‚РѕРјРѕР±РёР»СЊ.
 function isCarOnFire( car ) end
 
 ---@param car Vehicle 
 ---@param tire int 
 ---@return result bool 
----Возвращает true при спущенном колесе автомобиля
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ true РїСЂРё СЃРїСѓС‰РµРЅРЅРѕРј РєРѕР»РµСЃРµ Р°РІС‚РѕРјРѕР±РёР»СЏ
 function isCarTireBurst( car,  tire ) end
 
 ---@param ped Ped 
@@ -1448,22 +1448,22 @@ function createProtectionPickup( atX,  atY,  atZ,  int4,  int5 ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет педа на нахождение в т/c типа \"Лодка\"
+---РџСЂРѕРІРµСЂСЏРµС‚ РїРµРґР° РЅР° РЅР°С…РѕР¶РґРµРЅРёРµ РІ С‚/c С‚РёРїР° \"Р›РѕРґРєР°\"
 function isCharInAnyBoat( ped ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет педа на нахождение в т/с типа \"Вертолет\"
+---РџСЂРѕРІРµСЂСЏРµС‚ РїРµРґР° РЅР° РЅР°С…РѕР¶РґРµРЅРёРµ РІ С‚/СЃ С‚РёРїР° \"Р’РµСЂС‚РѕР»РµС‚\"
 function isCharInAnyHeli( ped ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет хэндл на нахождение в т/с типа \"Самолёт\"
+---РџСЂРѕРІРµСЂСЏРµС‚ С…СЌРЅРґР» РЅР° РЅР°С…РѕР¶РґРµРЅРёРµ РІ С‚/СЃ С‚РёРїР° \"РЎР°РјРѕР»С‘С‚\"
 function isCharInAnyPlane( ped ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет педа на нахождение в воде
+---РџСЂРѕРІРµСЂСЏРµС‚ РїРµРґР° РЅР° РЅР°С…РѕР¶РґРµРЅРёРµ РІ РІРѕРґРµ
 function isCharInWater( ped ) end
 
 ---@param ped Ped 
@@ -1471,7 +1471,7 @@ function isCharInWater( ped ) end
 ---@return weapon int 
 ---@return ammo int 
 ---@return Model Model 
----Получает данные об оружии в указанном слоте
+---РџРѕР»СѓС‡Р°РµС‚ РґР°РЅРЅС‹Рµ РѕР± РѕСЂСѓР¶РёРё РІ СѓРєР°Р·Р°РЅРЅРѕРј СЃР»РѕС‚Рµ
 function getCharWeaponInSlot( ped,  slot ) end
 
 ---@param atX float 
@@ -1486,7 +1486,7 @@ function getCharWeaponInSlot( ped,  slot ) end
 ---@return float10 float 
 ---@return float11 float 
 ---@return float12 float 
----Получает две ближайшие ноды пути в указанном диапазоне расстояния
+---РџРѕР»СѓС‡Р°РµС‚ РґРІРµ Р±Р»РёР¶Р°Р№С€РёРµ РЅРѕРґС‹ РїСѓС‚Рё РІ СѓРєР°Р·Р°РЅРЅРѕРј РґРёР°РїР°Р·РѕРЅРµ СЂР°СЃСЃС‚РѕСЏРЅРёСЏ
 function getClosestStraightRoad( atX,  atY,  atZ,  height,  radius ) end
 
 ---@param int1 int 
@@ -1500,7 +1500,7 @@ function getHavocCausedByPlayer( int1 ) end
 ---@return X float 
 ---@return Y float 
 ---@return Z float 
----Возвращает позицию педа с указанным смещением
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕР·РёС†РёСЋ РїРµРґР° СЃ СѓРєР°Р·Р°РЅРЅС‹Рј СЃРјРµС‰РµРЅРёРµРј
 function getOffsetFromCharInWorldCoords( ped,  offsetX,  offsetY,  offsetZ ) end
 
 ---@param ped Ped 
@@ -1533,7 +1533,7 @@ function hasObjectCollidedWithAnything( object ) end
 
 ---@param ped Ped 
 ---@return armour int 
----Возвращает количество брони у педа
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ Р±СЂРѕРЅРё Сѓ РїРµРґР°
 function getCharArmour( ped ) end
 
 ---@param object Object 
@@ -1543,7 +1543,7 @@ function getCharArmour( ped ) end
 ---@param radiusY float 
 ---@param sphere bool 
 ---@return result bool 
----Проверяет нахождение объекта в указанных координат в определенном радиусе
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕР¶РґРµРЅРёРµ РѕР±СЉРµРєС‚Р° РІ СѓРєР°Р·Р°РЅРЅС‹С… РєРѕРѕСЂРґРёРЅР°С‚ РІ РѕРїСЂРµРґРµР»РµРЅРЅРѕРј СЂР°РґРёСѓСЃРµ
 function locateObject2d( object,  X,  Y,  radiusX,  radiusY,  sphere ) end
 
 ---@param object Object 
@@ -1555,12 +1555,12 @@ function locateObject2d( object,  X,  Y,  radiusX,  radiusY,  sphere ) end
 ---@param radiusZ float 
 ---@param flag bool 
 ---@return result bool 
----Проверяет нахождение объекта в указанных координат в определенном радиусе
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕР¶РґРµРЅРёРµ РѕР±СЉРµРєС‚Р° РІ СѓРєР°Р·Р°РЅРЅС‹С… РєРѕРѕСЂРґРёРЅР°С‚ РІ РѕРїСЂРµРґРµР»РµРЅРЅРѕРј СЂР°РґРёСѓСЃРµ
 function locateObject3d( object,  X,  Y,  Z,  radiusX,  radiusY,  radiusZ,  flag ) end
 
 ---@param object Object 
 ---@return result bool 
----Проверяет нахождение объекта в воде
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕР¶РґРµРЅРёРµ РѕР±СЉРµРєС‚Р° РІ РІРѕРґРµ
 function isObjectInWater( object ) end
 
 ---@param object Object 
@@ -1570,7 +1570,7 @@ function isObjectInWater( object ) end
 ---@param cornerBY float 
 ---@param sphere bool 
 ---@return result bool 
----Проверяет нахождение объекта в указанном квадрате
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕР¶РґРµРЅРёРµ РѕР±СЉРµРєС‚Р° РІ СѓРєР°Р·Р°РЅРЅРѕРј РєРІР°РґСЂР°С‚Рµ
 function isObjectInArea2d( object,  cornerAX,  cornerAY,  cornerBX,  cornerBY,  sphere ) end
 
 ---@param object Object 
@@ -1582,7 +1582,7 @@ function isObjectInArea2d( object,  cornerAX,  cornerAY,  cornerBX,  cornerBY,  
 ---@param cornerBZ float 
 ---@param flag bool 
 ---@return result bool 
----Проверяет нахождение объекта в указанном кубе
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕР¶РґРµРЅРёРµ РѕР±СЉРµРєС‚Р° РІ СѓРєР°Р·Р°РЅРЅРѕРј РєСѓР±Рµ
 function isObjectInArea3d( object,  cornerAX,  cornerAY,  cornerAZ,  cornerBX,  cornerBY,  cornerBZ,  flag ) end
 
 ---@param animation string 
@@ -1634,7 +1634,7 @@ function getDistanceBetweenCoords2d( x1,  y1,  x2,  y2 ) end
 ---@param y2 float 
 ---@param z2 float 
 ---@return distance float 
----Получение дистанции между двумя точками в игровом мире
+---РџРѕР»СѓС‡РµРЅРёРµ РґРёСЃС‚Р°РЅС†РёРё РјРµР¶РґСѓ РґРІСѓРјСЏ С‚РѕС‡РєР°РјРё РІ РёРіСЂРѕРІРѕРј РјРёСЂРµ
 function getDistanceBetweenCoords3d( x1,  y1,  z1,  x2,  y2,  z2 ) end
 
 ---@param pX float 
@@ -1696,17 +1696,17 @@ function createRandomCharAsPassenger( car,  seat ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет управляет ли хэндл полицейской машиной
+---РџСЂРѕРІРµСЂСЏРµС‚ СѓРїСЂР°РІР»СЏРµС‚ Р»Рё С…СЌРЅРґР» РїРѕР»РёС†РµР№СЃРєРѕР№ РјР°С€РёРЅРѕР№
 function isCharInAnyPoliceVehicle( ped ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет хэндл на существование
+---РџСЂРѕРІРµСЂСЏРµС‚ С…СЌРЅРґР» РЅР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёРµ
 function doesCharExist( ped ) end
 
 ---@param car Vehicle 
 ---@return result bool 
----Проверяет существование транспорта
+---РџСЂРѕРІРµСЂСЏРµС‚ СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёРµ С‚СЂР°РЅСЃРїРѕСЂС‚Р°
 function doesVehicleExist( car ) end
 
 ---@param pX float 
@@ -1725,7 +1725,7 @@ function isPlayerInInfoZone( player,  zone ) end
 ---@return result bool 
 function isPlayerInShortcutTaxi( player ) end
 
----Проверяет сидит ли персонаж
+---РџСЂРѕРІРµСЂСЏРµС‚ СЃРёРґРёС‚ Р»Рё РїРµСЂСЃРѕРЅР°Р¶
 function isCharDucking( ) end
 
 ---@param object Object 
@@ -1922,7 +1922,7 @@ function getHeadingFromVector2d( pX,  pY ) end
 
 ---@param type int 
 ---@return maker int 
----Создает маркер поведения актера с заданным типом
+---РЎРѕР·РґР°РµС‚ РјР°СЂРєРµСЂ РїРѕРІРµРґРµРЅРёСЏ Р°РєС‚РµСЂР° СЃ Р·Р°РґР°РЅРЅС‹Рј С‚РёРїРѕРј
 function loadCharDecisionMaker( type ) end
 
 ---@param car Vehicle 
@@ -1932,7 +1932,7 @@ function isPlaybackGoingOnForCar( car ) end
 ---@param ped Ped 
 ---@param anim string 
 ---@return result bool 
----Проверяет, запущена ли указанная анимация
+---РџСЂРѕРІРµСЂСЏРµС‚, Р·Р°РїСѓС‰РµРЅР° Р»Рё СѓРєР°Р·Р°РЅРЅР°СЏ Р°РЅРёРјР°С†РёСЏ
 function isCharPlayingAnim( ped,  anim ) end
 
 ---@param ped Ped 
@@ -2003,12 +2003,12 @@ function limitAngle( angle ) end
 ---@return X float 
 ---@return Y float 
 ---@return Z float 
----Получает координаты пикапа по его хендлу
+---РџРѕР»СѓС‡Р°РµС‚ РєРѕРѕСЂРґРёРЅР°С‚С‹ РїРёРєР°РїР° РїРѕ РµРіРѕ С…РµРЅРґР»Сѓ
 function getPickupCoordinates( pickup ) end
 
 ---@param ped Ped 
 ---@return modelId int 
----Возвращает ID скина по хэндлу персонажа
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ ID СЃРєРёРЅР° РїРѕ С…СЌРЅРґР»Сѓ РїРµСЂСЃРѕРЅР°Р¶Р°
 function getCharModel( ped ) end
 
 ---@param particle string 
@@ -2090,17 +2090,17 @@ function isPlayerTargettingAnything( player ) end
 ---@return vecX float 
 ---@return vecY float 
 ---@return vecZ float 
----Возвращает скорость машины относительно её направления.
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃРєРѕСЂРѕСЃС‚СЊ РјР°С€РёРЅС‹ РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕ РµС‘ РЅР°РїСЂР°РІР»РµРЅРёСЏ.
 function getCarSpeedVector( car ) end
 
 ---@param car Vehicle 
 ---@return mass float 
----Возвращает массу автомобиля
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РјР°СЃСЃСѓ Р°РІС‚РѕРјРѕР±РёР»СЏ
 function getCarMass( car ) end
 
 ---@param ped Ped 
 ---@return speed float 
----Получает скорость движения персонажа по его хендлу
+---РџРѕР»СѓС‡Р°РµС‚ СЃРєРѕСЂРѕСЃС‚СЊ РґРІРёР¶РµРЅРёСЏ РїРµСЂСЃРѕРЅР°Р¶Р° РїРѕ РµРіРѕ С…РµРЅРґР»Сѓ
 function getCharSpeed( ped ) end
 
 ---@param type int 
@@ -2139,7 +2139,7 @@ function isCharInSearchlight( searchlight,  ped ) end
 ---@param checkObjects bool 
 ---@param checkParticles bool 
 ---@return result bool 
----Делает проверку на наличие обьектов определенных типов между точками в трёхмерно...
+---Р”РµР»Р°РµС‚ РїСЂРѕРІРµСЂРєСѓ РЅР° РЅР°Р»РёС‡РёРµ РѕР±СЊРµРєС‚РѕРІ РѕРїСЂРµРґРµР»РµРЅРЅС‹С… С‚РёРїРѕРІ РјРµР¶РґСѓ С‚РѕС‡РєР°РјРё РІ С‚СЂС‘С…РјРµСЂРЅРѕ...
 function isLineOfSightClear( fromX,  fromY,  fromZ,  toX,  toY,  toZ,  checkBuildings,  checkVehicles,  checkActors,  checkObjects,  checkParticles ) end
 
 ---@param car Vehicle 
@@ -2183,7 +2183,7 @@ function addBlipForSearchlight( searchlight ) end
 ---@param pointZ float 
 ---@param radius float 
 ---@return checkpoint Checkpoint 
----Создаёт чекпоинт на указанных координатах.
+---РЎРѕР·РґР°С‘С‚ С‡РµРєРїРѕРёРЅС‚ РЅР° СѓРєР°Р·Р°РЅРЅС‹С… РєРѕРѕСЂРґРёРЅР°С‚Р°С….
 function createCheckpoint( type,  atX,  atY,  atZ,  pointX,  pointY,  pointZ,  radius ) end
 
 ---@param type int 
@@ -2279,7 +2279,7 @@ function isConversationAtNode( ped,  gxtString ) end
 
 ---@param object objhandle 
 ---@return health int 
----Получает уровень здоровья объекта
+---РџРѕР»СѓС‡Р°РµС‚ СѓСЂРѕРІРµРЅСЊ Р·РґРѕСЂРѕРІСЊСЏ РѕР±СЉРµРєС‚Р°
 function getObjectHealth( object ) end
 
 ---@param x1 float 
@@ -2382,12 +2382,12 @@ function getCarPitch( car ) end
 
 ---@param id int 
 ---@return Model int 
----Получает модель оружия из его ID
+---РџРѕР»СѓС‡Р°РµС‚ РјРѕРґРµР»СЊ РѕСЂСѓР¶РёСЏ РёР· РµРіРѕ ID
 function getWeapontypeModel( id ) end
 
 ---@param id int 
 ---@return slot int 
----Возвращает слот указанного оружия
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃР»РѕС‚ СѓРєР°Р·Р°РЅРЅРѕРіРѕ РѕСЂСѓР¶РёСЏ
 function getWeapontypeSlot( id ) end
 
 ---@param item int 
@@ -2471,7 +2471,7 @@ function hasCarRecordingBeenLoaded( path ) end
 ---@return y float 
 ---@return z float 
 ---@return w float 
----Возвращает кватернион вращения объекта
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РєРІР°С‚РµСЂРЅРёРѕРЅ РІСЂР°С‰РµРЅРёСЏ РѕР±СЉРµРєС‚Р°
 function getObjectQuaternion( object ) end
 
 ---@param car Vehicle 
@@ -2479,7 +2479,7 @@ function getObjectQuaternion( object ) end
 ---@return y float 
 ---@return z float 
 ---@return w float 
----Возвращает кватернион вращения транспортного средства
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РєРІР°С‚РµСЂРЅРёРѕРЅ РІСЂР°С‰РµРЅРёСЏ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРіРѕ СЃСЂРµРґСЃС‚РІР°
 function getVehicleQuaternion( car ) end
 
 ---@param modelId Model 
@@ -2576,27 +2576,27 @@ function getCarCharIsUsing( ped ) end
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет находится ли персонаж в воздухе
+---РџСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕРґРёС‚СЃСЏ Р»Рё РїРµСЂСЃРѕРЅР°Р¶ РІ РІРѕР·РґСѓС…Рµ
 function isCharInAir( ped ) end
 
 ---@param ped Ped 
 ---@return height float 
----Возвращает значение высоты над землёй
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ РІС‹СЃРѕС‚С‹ РЅР°Рґ Р·РµРјР»С‘Р№
 function getCharHeightAboveGround( ped ) end
 
 ---@param modelId Model 
 ---@return result bool 
----Проверяет, является ли указанная модель лодкой
+---РџСЂРѕРІРµСЂСЏРµС‚, СЏРІР»СЏРµС‚СЃСЏ Р»Рё СѓРєР°Р·Р°РЅРЅР°СЏ РјРѕРґРµР»СЊ Р»РѕРґРєРѕР№
 function isThisModelABoat( modelId ) end
 
 ---@param modelId Model 
 ---@return result bool 
----Проверяет, является ли указанная модель самолётом
+---РџСЂРѕРІРµСЂСЏРµС‚, СЏРІР»СЏРµС‚СЃСЏ Р»Рё СѓРєР°Р·Р°РЅРЅР°СЏ РјРѕРґРµР»СЊ СЃР°РјРѕР»С‘С‚РѕРј
 function isThisModelAPlane( modelId ) end
 
 ---@param modelId Model 
 ---@return result bool 
----Проверяет, является ли указанная модель вертолётом
+---РџСЂРѕРІРµСЂСЏРµС‚, СЏРІР»СЏРµС‚СЃСЏ Р»Рё СѓРєР°Р·Р°РЅРЅР°СЏ РјРѕРґРµР»СЊ РІРµСЂС‚РѕР»С‘С‚РѕРј
 function isThisModelAHeli( modelId ) end
 
 ---@param object Object 
@@ -2625,14 +2625,14 @@ function getCarUprightValue( car ) end
 
 ---@param player Player 
 ---@return city int 
----Получает текущий ID города, возвращает 0 если игрок не в городе
+---РџРѕР»СѓС‡Р°РµС‚ С‚РµРєСѓС‰РёР№ ID РіРѕСЂРѕРґР°, РІРѕР·РІСЂР°С‰Р°РµС‚ 0 РµСЃР»Рё РёРіСЂРѕРє РЅРµ РІ РіРѕСЂРѕРґРµ
 function getCityPlayerIsIn( player ) end
 
 ---@param X float 
 ---@param Y float 
 ---@param Z float 
 ---@return name GxtString 
----Получение название района/части карты
+---РџРѕР»СѓС‡РµРЅРёРµ РЅР°Р·РІР°РЅРёРµ СЂР°Р№РѕРЅР°/С‡Р°СЃС‚Рё РєР°СЂС‚С‹
 function getNameOfZone( X,  Y,  Z ) end
 
 ---@param ped Ped 
@@ -2773,7 +2773,7 @@ function getClothesItem( player,  bodypart ) end
 ---@param object Object 
 ---@param type int 
 ---@return result bool 
----Проверяет с указанного ли оружия было попадание по объекту
+---РџСЂРѕРІРµСЂСЏРµС‚ СЃ СѓРєР°Р·Р°РЅРЅРѕРіРѕ Р»Рё РѕСЂСѓР¶РёСЏ Р±С‹Р»Рѕ РїРѕРїР°РґР°РЅРёРµ РїРѕ РѕР±СЉРµРєС‚Сѓ
 function hasObjectBeenDamagedByWeapon( object,  type ) end
 
 ---@param interface int 
@@ -2891,7 +2891,7 @@ function createMenuGrid( gxtString,  positionX,  positionY,  width,  columns,  i
 
 ---@param ped Ped 
 ---@return result bool 
----Проверяет плавает ли пед
+---РџСЂРѕРІРµСЂСЏРµС‚ РїР»Р°РІР°РµС‚ Р»Рё РїРµРґ
 function isCharSwimming( ped ) end
 
 ---@param ped Ped 
@@ -2941,7 +2941,7 @@ function hasTrainDerailed( train ) end
 
 ---@param object Object 
 ---@return id int 
----Возвращает ид объекта по его хендлу
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РёРґ РѕР±СЉРµРєС‚Р° РїРѕ РµРіРѕ С…РµРЅРґР»Сѓ
 function getObjectModel( object ) end
 
 ---@param car Vehicle 
@@ -2975,7 +2975,7 @@ function getRandomCarModelInMemory( unk ) end
 
 ---@param car Vehicle 
 ---@return doorStatus int 
----Возвращает состояние дверей автомобиля (открыты/закрыты)
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃРѕСЃС‚РѕСЏРЅРёРµ РґРІРµСЂРµР№ Р°РІС‚РѕРјРѕР±РёР»СЏ (РѕС‚РєСЂС‹С‚С‹/Р·Р°РєСЂС‹С‚С‹)
 function getCarDoorLockStatus( car ) end
 
 ---@param car Vehicle 
@@ -3071,7 +3071,7 @@ function isPlayerControlOn( player ) end
 
 ---@param ped Ped 
 ---@return interior int 
----Функция возвращает айди интерьера, в котором находится персонаж по его хендлу
+---Р¤СѓРЅРєС†РёСЏ РІРѕР·РІСЂР°С‰Р°РµС‚ Р°Р№РґРё РёРЅС‚РµСЂСЊРµСЂР°, РІ РєРѕС‚РѕСЂРѕРј РЅР°С…РѕРґРёС‚СЃСЏ РїРµСЂСЃРѕРЅР°Р¶ РїРѕ РµРіРѕ С…РµРЅРґР»Сѓ
 function getCharActiveInterior( ped ) end
 
 ---@param ped Ped 
@@ -3106,7 +3106,7 @@ function getStringWidthWithNumber( gxtString,  number ) end
 
 ---@param player Player 
 ---@return result bool 
----Проверяет, использует ли игрок джетпак
+---РџСЂРѕРІРµСЂСЏРµС‚, РёСЃРїРѕР»СЊР·СѓРµС‚ Р»Рё РёРіСЂРѕРє РґР¶РµС‚РїР°Рє
 function isPlayerUsingJetpack( player ) end
 
 ---@param car Vehicle 
@@ -3125,7 +3125,7 @@ function isCharTouchingChar( ped,  ped2 ) end
 
 ---@param player Player 
 ---@return result bool 
----Возвращает true, если игрок перелазит/лезет на что-то (стена, забор, любое препя...
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ true, РµСЃР»Рё РёРіСЂРѕРє РїРµСЂРµР»Р°Р·РёС‚/Р»РµР·РµС‚ РЅР° С‡С‚Рѕ-С‚Рѕ (СЃС‚РµРЅР°, Р·Р°Р±РѕСЂ, Р»СЋР±РѕРµ РїСЂРµРїСЏ...
 function isPlayerClimbing( player ) end
 
 ---@param gxtString GxtString 
@@ -3162,82 +3162,82 @@ function getRandomCharInAreaOffsetNoSave( sphereX,  sphereY,  sphereZ,  radiusX,
 function createUser3dMarker( atX,  atY,  atZ,  color ) end
 
 ---@param shake int 
----Создаёт эффект «тряски» камеры
+---РЎРѕР·РґР°С‘С‚ СЌС„С„РµРєС‚ В«С‚СЂСЏСЃРєРёВ» РєР°РјРµСЂС‹
 function shakeCam( shake ) end
 
 ---@param ped Ped 
----Удаляет персонажа
+---РЈРґР°Р»СЏРµС‚ РїРµСЂСЃРѕРЅР°Р¶Р°
 function deleteChar( ped ) end
 
 ---@param ped Ped 
 ---@param posX float 
 ---@param posY float 
 ---@param posZ float 
----Телепортирует указанного актера на указанные координаты
+---РўРµР»РµРїРѕСЂС‚РёСЂСѓРµС‚ СѓРєР°Р·Р°РЅРЅРѕРіРѕ Р°РєС‚РµСЂР° РЅР° СѓРєР°Р·Р°РЅРЅС‹Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹
 function setCharCoordinates( ped,  posX,  posY,  posZ ) end
 
 ---@param car Vehicle 
----Удаляет транспорт
+---РЈРґР°Р»СЏРµС‚ С‚СЂР°РЅСЃРїРѕСЂС‚
 function deleteCar( car ) end
 
 ---@param car Vehicle 
 ---@param driveToX float 
 ---@param driveToY float 
 ---@param driveToZ float 
----Телепортирует транспорт на указанные координаты
+---РўРµР»РµРїРѕСЂС‚РёСЂСѓРµС‚ С‚СЂР°РЅСЃРїРѕСЂС‚ РЅР° СѓРєР°Р·Р°РЅРЅС‹Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹
 function carGotoCoordinates( car,  driveToX,  driveToY,  driveToZ ) end
 
 ---@param car Vehicle 
----Устанавливает машине сумасшедшее вождение
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РјР°С€РёРЅРµ СЃСѓРјР°СЃС€РµРґС€РµРµ РІРѕР¶РґРµРЅРёРµ
 function carWanderRandomly( car ) end
 
 ---@param car Vehicle 
----Устанавливает нормальное вождение автомобиля
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РЅРѕСЂРјР°Р»СЊРЅРѕРµ РІРѕР¶РґРµРЅРёРµ Р°РІС‚РѕРјРѕР±РёР»СЏ
 function carSetIdle( car ) end
 
 ---@param car Vehicle 
 ---@param atX float 
 ---@param atY float 
 ---@param atZ float 
----Задаёт позицию транспортного средства
+---Р—Р°РґР°С‘С‚ РїРѕР·РёС†РёСЋ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРіРѕ СЃСЂРµРґСЃС‚РІР°
 function setCarCoordinates( car,  atX,  atY,  atZ ) end
 
 ---@param car Vehicle 
 ---@param maxSpeed float 
----Устанавливает максимальную скорость автомобиля
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ СЃРєРѕСЂРѕСЃС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЏ
 function setCarCruiseSpeed( car,  maxSpeed ) end
 
 ---@param car Vehicle 
 ---@param behaviour int 
----Устанавливает аккуратность вождения
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ Р°РєРєСѓСЂР°С‚РЅРѕСЃС‚СЊ РІРѕР¶РґРµРЅРёСЏ
 function setCarDrivingStyle( car,  behaviour ) end
 
 ---@param car Vehicle 
 ---@param driverBehaviour int 
----Устанавливает автомобилю поведение
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ Р°РІС‚РѕРјРѕР±РёР»СЋ РїРѕРІРµРґРµРЅРёРµ
 function setCarMission( car,  driverBehaviour ) end
 
 ---@param gxtString GxtString 
 ---@param time int 
 ---@param style int 
----Выводит стилизованный текст из GXT на определённое время
+---Р’С‹РІРѕРґРёС‚ СЃС‚РёР»РёР·РѕРІР°РЅРЅС‹Р№ С‚РµРєСЃС‚ РёР· GXT РЅР° РѕРїСЂРµРґРµР»С‘РЅРЅРѕРµ РІСЂРµРјСЏ
 function printBig( gxtString,  time,  style ) end
 
 ---@param gxtString GxtString 
 ---@param time int 
 ---@param flag int 
----Отображает текстовую строку с низким приоритетом в нижней части экрана, в течени...
+---РћС‚РѕР±СЂР°Р¶Р°РµС‚ С‚РµРєСЃС‚РѕРІСѓСЋ СЃС‚СЂРѕРєСѓ СЃ РЅРёР·РєРёРј РїСЂРёРѕСЂРёС‚РµС‚РѕРј РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё СЌРєСЂР°РЅР°, РІ С‚РµС‡РµРЅРё...
 function printText( gxtString,  time,  flag ) end
 
 ---@param gxtString GxtString 
 ---@param time int 
 ---@param flag int 
----Отображает текстовую строку в нижней части экрана с высоким приоритетом, в течен...
+---РћС‚РѕР±СЂР°Р¶Р°РµС‚ С‚РµРєСЃС‚РѕРІСѓСЋ СЃС‚СЂРѕРєСѓ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё СЌРєСЂР°РЅР° СЃ РІС‹СЃРѕРєРёРј РїСЂРёРѕСЂРёС‚РµС‚РѕРј, РІ С‚РµС‡РµРЅ...
 function printTextNow( gxtString,  time,  flag ) end
 
 ---@param hours int 
 ---@param minutes int 
----Меняет текущее время сервера, на указанное в функции
+---РњРµРЅСЏРµС‚ С‚РµРєСѓС‰РµРµ РІСЂРµРјСЏ СЃРµСЂРІРµСЂР°, РЅР° СѓРєР°Р·Р°РЅРЅРѕРµ РІ С„СѓРЅРєС†РёРё
 function setTimeOfDay( hours,  minutes ) end
 
 ---@param ped Ped 
@@ -3248,12 +3248,12 @@ function setTimeOfDay( hours,  minutes ) end
 function locateCharOnFootChar2d( ped,  nearPed,  radiusX,  radiusY,  sphere ) end
 
 ---@param object Object 
----Удаляет объект
+---РЈРґР°Р»СЏРµС‚ РѕР±СЉРµРєС‚
 function deleteObject( object ) end
 
 ---@param player Player 
 ---@param money int 
----Дать денег персонажу
+---Р”Р°С‚СЊ РґРµРЅРµРі РїРµСЂСЃРѕРЅР°Р¶Сѓ
 function givePlayerMoney( player,  money ) end
 
 ---@param player Player 
@@ -3264,26 +3264,26 @@ function giveRemoteControlledCarToPlayer( player,  float2,  float3,  float4 ) en
 
 ---@param player Player 
 ---@param WantedLevel int 
----Устанавливает уровень розыска игроку
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СѓСЂРѕРІРµРЅСЊ СЂРѕР·С‹СЃРєР° РёРіСЂРѕРєСѓ
 function alterWantedLevel( player,  WantedLevel ) end
 
 ---@param player Player 
 ---@param minimumWantedLevel int 
----Устанавливает уровень розыска игроку, при этом не сбрасывая его в дальнейшем
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СѓСЂРѕРІРµРЅСЊ СЂРѕР·С‹СЃРєР° РёРіСЂРѕРєСѓ, РїСЂРё СЌС‚РѕРј РЅРµ СЃР±СЂР°СЃС‹РІР°СЏ РµРіРѕ РІ РґР°Р»СЊРЅРµР№С€РµРј
 function alterWantedLevelNoDrop( player,  minimumWantedLevel ) end
 
 ---@param player Player 
----Удаляет розыск игроку
+---РЈРґР°Р»СЏРµС‚ СЂРѕР·С‹СЃРє РёРіСЂРѕРєСѓ
 function clearWantedLevel( player ) end
 
 ---@param state bool 
----Устанавливает состояние персонажа: убит или арестован
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЃРѕСЃС‚РѕСЏРЅРёРµ РїРµСЂСЃРѕРЅР°Р¶Р°: СѓР±РёС‚ РёР»Рё Р°СЂРµСЃС‚РѕРІР°РЅ
 function setDeatharrestState( state ) end
 
 ---@param ped Ped 
 ---@param weapon int 
 ---@param ammo int 
----Добавляет патроны персонажу, если у него есть оружие
+---Р”РѕР±Р°РІР»СЏРµС‚ РїР°С‚СЂРѕРЅС‹ РїРµСЂСЃРѕРЅР°Р¶Сѓ, РµСЃР»Рё Сѓ РЅРµРіРѕ РµСЃС‚СЊ РѕСЂСѓР¶РёРµ
 function addAmmoToChar( ped,  weapon,  ammo ) end
 
 ---@param carGenerator int 
@@ -3316,7 +3316,7 @@ function pointCameraAtChar( ped,  mode,  switchstyle ) end
 function shakePad( player,  time,  intensity ) end
 
 ---@param gamespeed float 
----Устанавливает скорость игры
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЃРєРѕСЂРѕСЃС‚СЊ РёРіСЂС‹
 function setTimeScale( gamespeed ) end
 
 ---@param positionX float 
@@ -3334,17 +3334,17 @@ function setFixedCameraPosition( positionX,  positionY,  positionZ,  rotationX, 
 function pointCameraAtPoint( pointAtX,  pointAtY,  pointAtZ,  switchstyle ) end
 
 ---@param marker markerhandle 
----Удаляет маркер
+---РЈРґР°Р»СЏРµС‚ РјР°СЂРєРµСЂ
 function removeBlip( marker ) end
 
 ---@param marker markerhandle 
 ---@param color int 
----Меняет цвет маркера
+---РњРµРЅСЏРµС‚ С†РІРµС‚ РјР°СЂРєРµСЂР°
 function changeBlipColour( marker,  color ) end
 
 ---@param marker Marker 
 ---@param size int 
----Меняет размер маркера
+---РњРµРЅСЏРµС‚ СЂР°Р·РјРµСЂ РјР°СЂРєРµСЂР°
 function changeBlipScale( marker,  size ) end
 
 ---@param r int 
@@ -3390,23 +3390,23 @@ function drawShadow( particle,  atX,  atY,  atZ,  rotationFactor,  size,  intens
 
 ---@param ped Ped 
 ---@param angle float 
----Устанавливает Z-угол(поворот) персонажа
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ Z-СѓРіРѕР»(РїРѕРІРѕСЂРѕС‚) РїРµСЂСЃРѕРЅР°Р¶Р°
 function setCharHeading( ped,  angle ) end
 
 ---@param car Vehicle 
 ---@param angle float 
----Устанавливает Z-угол(поворот) транспорта
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ Z-СѓРіРѕР»(РїРѕРІРѕСЂРѕС‚) С‚СЂР°РЅСЃРїРѕСЂС‚Р°
 function setCarHeading( car,  angle ) end
 
 ---@param object Object 
 ---@param angle float 
----Задаёт угол поворота объекту
+---Р—Р°РґР°С‘С‚ СѓРіРѕР» РїРѕРІРѕСЂРѕС‚Р° РѕР±СЉРµРєС‚Сѓ
 function setObjectHeading( object,  angle ) end
 
 ---@param ped Ped 
 ---@param weapon int 
 ---@param ammo int 
----Устанавливает количество патронов в указанное оружие
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ РїР°С‚СЂРѕРЅРѕРІ РІ СѓРєР°Р·Р°РЅРЅРѕРµ РѕСЂСѓР¶РёРµ
 function setCharAmmo( ped,  weapon,  ammo ) end
 
 ---@param flag VarId 
@@ -3420,11 +3420,11 @@ function changeBlipDisplay( marker,  mode ) end
 ---@param atY float 
 ---@param atZ float 
 ---@param sound int 
----Проигрывает звук, если указаны координаты то звук проиграется на указанных коорд...
+---РџСЂРѕРёРіСЂС‹РІР°РµС‚ Р·РІСѓРє, РµСЃР»Рё СѓРєР°Р·Р°РЅС‹ РєРѕРѕСЂРґРёРЅР°С‚С‹ С‚Рѕ Р·РІСѓРє РїСЂРѕРёРіСЂР°РµС‚СЃСЏ РЅР° СѓРєР°Р·Р°РЅРЅС‹С… РєРѕРѕСЂРґ...
 function addOneOffSound( atX,  atY,  atZ,  sound ) end
 
 ---@param sound int 
----Удаляет проигрываемый звук
+---РЈРґР°Р»СЏРµС‚ РїСЂРѕРёРіСЂС‹РІР°РµРјС‹Р№ Р·РІСѓРє
 function removeSound( sound ) end
 
 ---@param car Vehicle 
@@ -3436,19 +3436,19 @@ function removeUpsidedownCarCheck( car ) end
 ---@param ped Ped 
 ---@param weapon int 
 ---@param ammo int 
----Выдает ID оружия и кол-во патронов
+---Р’С‹РґР°РµС‚ ID РѕСЂСѓР¶РёСЏ Рё РєРѕР»-РІРѕ РїР°С‚СЂРѕРЅРѕРІ
 function giveWeaponToChar( ped,  weapon,  ammo ) end
 
 ---@param ped Ped 
 ---@param weapon int 
----Дает персонажу в руки указанное оружие
+---Р”Р°РµС‚ РїРµСЂСЃРѕРЅР°Р¶Сѓ РІ СЂСѓРєРё СѓРєР°Р·Р°РЅРЅРѕРµ РѕСЂСѓР¶РёРµ
 function setCurrentCharWeapon( ped,  weapon ) end
 
 ---@param ped Ped 
 function markCharAsNoLongerNeeded( ped ) end
 
 ---@param car Vehicle 
----Помечает транспорт как более ненужный для скриптового движка и что он может быть...
+---РџРѕРјРµС‡Р°РµС‚ С‚СЂР°РЅСЃРїРѕСЂС‚ РєР°Рє Р±РѕР»РµРµ РЅРµРЅСѓР¶РЅС‹Р№ РґР»СЏ СЃРєСЂРёРїС‚РѕРІРѕРіРѕ РґРІРёР¶РєР° Рё С‡С‚Рѕ РѕРЅ РјРѕР¶РµС‚ Р±С‹С‚СЊ...
 function markCarAsNoLongerNeeded( car ) end
 
 ---@param object Object 
@@ -3469,22 +3469,22 @@ function dontRemoveObject( object ) end
 function switchRoadsOff( cornerAX,  cornerAY,  cornerAZ,  cornerBX,  cornerBY,  cornerBZ ) end
 
 ---@param level int 
----Устанавливает максимально возможный уровень розыска
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕ РІРѕР·РјРѕР¶РЅС‹Р№ СѓСЂРѕРІРµРЅСЊ СЂРѕР·С‹СЃРєР°
 function setMaxWantedLevel( level ) end
 
 ---@param car Vehicle 
 ---@param status int 
----Установить, открыты или закрыты двери т/с
+---РЈСЃС‚Р°РЅРѕРІРёС‚СЊ, РѕС‚РєСЂС‹С‚С‹ РёР»Рё Р·Р°РєСЂС‹С‚С‹ РґРІРµСЂРё С‚/СЃ
 function lockCarDoors( car,  status ) end
 
 ---@param ped pedhandle 
 ---@param health int 
----Устанавливает персонажу уровень здоровья
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РїРµСЂСЃРѕРЅР°Р¶Сѓ СѓСЂРѕРІРµРЅСЊ Р·РґРѕСЂРѕРІСЊСЏ
 function setCharHealth( ped,  health ) end
 
 ---@param car carhandle 
 ---@param health int 
----Устанавливает уровень здоровья машине
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СѓСЂРѕРІРµРЅСЊ Р·РґРѕСЂРѕРІСЊСЏ РјР°С€РёРЅРµ
 function setCarHealth( car,  health ) end
 
 ---@param cornerAX float 
@@ -3507,7 +3507,7 @@ function switchPedRoadsOff( cornerAX,  cornerAY,  cornerAZ,  cornerBX,  cornerBY
 ---@param weapons1 int 
 ---@param weapons2 int 
 ---@param weapons3 int 
----Устанавливает указанной банде оружие которое она может использовать
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СѓРєР°Р·Р°РЅРЅРѕР№ Р±Р°РЅРґРµ РѕСЂСѓР¶РёРµ РєРѕС‚РѕСЂРѕРµ РѕРЅР° РјРѕР¶РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ
 function setGangWeapons( gang,  weapons1,  weapons2,  weapons3 ) end
 
 ---@param gxtString GxtString 
@@ -3525,11 +3525,11 @@ function setAnimGroupForChar( ped,  style ) end
 
 ---@param model Model 
 ---@return result bool 
----Загружает указанную модель
+---Р—Р°РіСЂСѓР¶Р°РµС‚ СѓРєР°Р·Р°РЅРЅСѓСЋ РјРѕРґРµР»СЊ
 function requestModel( model ) end
 
 ---@param modelId Model 
----Помечает загруженную ранее модель как более ненужную для скриптового движка
+---РџРѕРјРµС‡Р°РµС‚ Р·Р°РіСЂСѓР¶РµРЅРЅСѓСЋ СЂР°РЅРµРµ РјРѕРґРµР»СЊ РєР°Рє Р±РѕР»РµРµ РЅРµРЅСѓР¶РЅСѓСЋ РґР»СЏ СЃРєСЂРёРїС‚РѕРІРѕРіРѕ РґРІРёР¶РєР°
 function markModelAsNoLongerNeeded( modelId ) end
 
 ---@param atX float 
@@ -3551,7 +3551,7 @@ function setCanResprayCar( car,  sprayable ) end
 function unloadSpecialCharacter( id ) end
 
 ---@param player Player 
----Сбрасывает количество раз, сколько раз игрок уничтожил определенную модель
+---РЎР±СЂР°СЃС‹РІР°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ СЂР°Р·, СЃРєРѕР»СЊРєРѕ СЂР°Р· РёРіСЂРѕРє СѓРЅРёС‡С‚РѕР¶РёР» РѕРїСЂРµРґРµР»РµРЅРЅСѓСЋ РјРѕРґРµР»СЊ
 function resetNumOfModelsKilledByPlayer( player ) end
 
 ---@param garage GxtString 
@@ -3574,7 +3574,7 @@ function setCarOnlyDamagedByPlayer( car,  enabled ) end
 ---@param EP bool 
 ---@param CP bool 
 ---@param MP bool 
----Устанавливает иммунитет персонажу
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РёРјРјСѓРЅРёС‚РµС‚ РїРµСЂСЃРѕРЅР°Р¶Сѓ
 function setCharProofs( ped,  BP,  FP,  EP,  CP,  MP ) end
 
 ---@param car Vehicle 
@@ -3583,7 +3583,7 @@ function setCharProofs( ped,  BP,  FP,  EP,  CP,  MP ) end
 ---@param EP bool 
 ---@param CP bool 
 ---@param MP bool 
----Устанавливает иммунитет машине
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РёРјРјСѓРЅРёС‚РµС‚ РјР°С€РёРЅРµ
 function setCarProofs( car,  BP,  FP,  EP,  CP,  MP ) end
 
 ---@param garage GxtString 
@@ -3605,12 +3605,12 @@ function removeScriptFire( fire ) end
 function boatGotoCoords( boat,  toX,  toY,  toZ ) end
 
 ---@param car Vehicle 
----Заглушить мотор т/c
+---Р—Р°РіР»СѓС€РёС‚СЊ РјРѕС‚РѕСЂ С‚/c
 function boatStop( car ) end
 
 ---@param boat Vehicle 
 ---@param maxSpeed float 
----Устанавливает максимальную скорость лодки
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ СЃРєРѕСЂРѕСЃС‚СЊ Р»РѕРґРєРё
 function setBoatCruiseSpeed( boat,  maxSpeed ) end
 
 ---@param ped Ped 
@@ -3696,7 +3696,7 @@ function explodeCharHead( ped ) end
 function anchorBoat( boat,  anchor ) end
 
 ---@param mode int 
----Устанавливает режим камеры
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЂРµР¶РёРј РєР°РјРµСЂС‹
 function setCameraZoom( mode ) end
 
 ---@param car Vehicle 
@@ -3705,17 +3705,17 @@ function setCarRamCar( car,  car ) end
 
 ---@param player Player 
 ---@param infiniteRun bool 
----Устанавливает, может ли игрок устать
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚, РјРѕР¶РµС‚ Р»Рё РёРіСЂРѕРє СѓСЃС‚Р°С‚СЊ
 function setPlayerNeverGetsTired( player,  infiniteRun ) end
 
 ---@param player Player 
 ---@param fastReload bool 
----Игроку не нужно будет перезаряжаться
+---РРіСЂРѕРєСѓ РЅРµ РЅСѓР¶РЅРѕ Р±СѓРґРµС‚ РїРµСЂРµР·Р°СЂСЏР¶Р°С‚СЊСЃСЏ
 function setPlayerFastReload( player,  fastReload ) end
 
 ---@param ped Ped 
 ---@param bleeding bool 
----Начинает кровотечение у персонажа
+---РќР°С‡РёРЅР°РµС‚ РєСЂРѕРІРѕС‚РµС‡РµРЅРёРµ Сѓ РїРµСЂСЃРѕРЅР°Р¶Р°
 function setCharBleeding( ped,  bleeding ) end
 
 ---@param enable bool 
@@ -3723,12 +3723,12 @@ function setFreeResprays( enable ) end
 
 ---@param ped Ped 
 ---@param visible bool 
----Устанавливает актёру невидимость
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ Р°РєС‚С‘СЂСѓ РЅРµРІРёРґРёРјРѕСЃС‚СЊ
 function setCharVisible( ped,  visible ) end
 
 ---@param car Vehicle 
 ---@param visible bool 
----Устанавливает машине невидимость
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РјР°С€РёРЅРµ РЅРµРІРёРґРёРјРѕСЃС‚СЊ
 function setCarVisible( car,  visible ) end
 
 ---@param posX float 
@@ -3768,7 +3768,7 @@ function setTextProportional( proportional ) end
 function setTextFont( font ) end
 
 ---@param ped Ped 
----Плавно удаляет модель игрока.
+---РџР»Р°РІРЅРѕ СѓРґР°Р»СЏРµС‚ РјРѕРґРµР»СЊ РёРіСЂРѕРєР°.
 function removeCharElegantly( ped ) end
 
 ---@param ped Ped 
@@ -3788,7 +3788,7 @@ function makeObjectTargettable( object,  targetable ) end
 
 ---@param ped Ped 
 ---@param points int 
----Выдаёт броню персонажу
+---Р’С‹РґР°С‘С‚ Р±СЂРѕРЅСЋ РїРµСЂСЃРѕРЅР°Р¶Сѓ
 function addArmourToChar( ped,  points ) end
 
 ---@param garage GxtString 
@@ -3801,7 +3801,7 @@ function closeGarage( garage ) end
 ---@param placeAtX float 
 ---@param placeAtY float 
 ---@param placeAtZ float 
----Вытаскивает персонажа из машины в указанные координаты
+---Р’С‹С‚Р°СЃРєРёРІР°РµС‚ РїРµСЂСЃРѕРЅР°Р¶Р° РёР· РјР°С€РёРЅС‹ РІ СѓРєР°Р·Р°РЅРЅС‹Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹
 function warpCharFromCarToCoord( ped,  placeAtX,  placeAtY,  placeAtZ ) end
 
 ---@param atX float 
@@ -3814,7 +3814,7 @@ function setVisibilityOfClosestObjectOfType( atX,  atY,  atZ,  radius,  modelId,
 
 ---@param ped Ped 
 ---@param car Vehicle 
----Помещает педа в указанный транспорт
+---РџРѕРјРµС‰Р°РµС‚ РїРµРґР° РІ СѓРєР°Р·Р°РЅРЅС‹Р№ С‚СЂР°РЅСЃРїРѕСЂС‚
 function warpCharIntoCar( ped,  car ) end
 
 ---@param gxtString GxtString 
@@ -3832,7 +3832,7 @@ function setObjectVelocity( object,  velocityInDirectionX,  velocityInDirectionY
 
 ---@param object Object 
 ---@param collision bool 
----Устанавливает коллизию определенному объекту
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РєРѕР»Р»РёР·РёСЋ РѕРїСЂРµРґРµР»РµРЅРЅРѕРјСѓ РѕР±СЉРµРєС‚Сѓ
 function setObjectCollision( object,  collision ) end
 
 ---@param gxtString GxtString 
@@ -3847,7 +3847,7 @@ function printStringInStringNow( gxtString,  string,  time1,  time2 ) end
 ---@param velocityZ float 
 function addToObjectVelocity( object,  velocityX,  velocityY,  velocityZ ) end
 
----Загрузка ранее запрошенных моделей
+---Р—Р°РіСЂСѓР·РєР° СЂР°РЅРµРµ Р·Р°РїСЂРѕС€РµРЅРЅС‹С… РјРѕРґРµР»РµР№
 function loadAllModelsNow( ) end
 
 ---@param texture int 
@@ -3878,7 +3878,7 @@ function setObjectDynamic( object,  moveable ) end
 ---@param ped Ped 
 ---@param animation string 
 ---@param speed float 
----Установка скорости анимации
+---РЈСЃС‚Р°РЅРѕРІРєР° СЃРєРѕСЂРѕСЃС‚Рё Р°РЅРёРјР°С†РёРё
 function setCharAnimSpeed( ped,  animation,  speed ) end
 
 ---@param music int 
@@ -3896,7 +3896,7 @@ function freezeOnscreenTimer( timer ) end
 
 ---@param car Vehicle 
 ---@param siren bool 
----Включает/выключает сирену на автомобиле
+---Р’РєР»СЋС‡Р°РµС‚/РІС‹РєР»СЋС‡Р°РµС‚ СЃРёСЂРµРЅСѓ РЅР° Р°РІС‚РѕРјРѕР±РёР»Рµ
 function switchCarSiren( car,  siren ) end
 
 ---@param car Vehicle 
@@ -3961,7 +3961,7 @@ function removeSphere( sphere ) end
 
 ---@param player Player 
 ---@param ignored bool 
----Устанавливает игнорирование пешеходов к игроку
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РёРіРЅРѕСЂРёСЂРѕРІР°РЅРёРµ РїРµС€РµС…РѕРґРѕРІ Рє РёРіСЂРѕРєСѓ
 function setEveryoneIgnorePlayer( player,  ignored ) end
 
 ---@param timer VarId 
@@ -4047,7 +4047,7 @@ function setUpsidedownCarNotDamaged( car,  disableFlippedExplosion ) end
 function makePlayerSafe( player ) end
 
 ---@param enable bool 
----Активирует или отключает рендер текста и текстур опкодами игры
+---РђРєС‚РёРІРёСЂСѓРµС‚ РёР»Рё РѕС‚РєР»СЋС‡Р°РµС‚ СЂРµРЅРґРµСЂ С‚РµРєСЃС‚Р° Рё С‚РµРєСЃС‚СѓСЂ РѕРїРєРѕРґР°РјРё РёРіСЂС‹
 function useRenderCommands( enable ) end
 
 ---@param enable bool 
@@ -4070,7 +4070,7 @@ function clearMissionAudio( id ) end
 
 ---@param player Player 
 ---@param free bool 
----Определяет, будут ли с игрока после смерти взымать деньги за лечение
+---РћРїСЂРµРґРµР»СЏРµС‚, Р±СѓРґСѓС‚ Р»Рё СЃ РёРіСЂРѕРєР° РїРѕСЃР»Рµ СЃРјРµСЂС‚Рё РІР·С‹РјР°С‚СЊ РґРµРЅСЊРіРё Р·Р° Р»РµС‡РµРЅРёРµ
 function setFreeHealthCare( player,  free ) end
 
 ---@param mission int 
@@ -4084,7 +4084,7 @@ function setObjectDrawLast( object,  drawLast ) end
 function setNearClip( clip ) end
 
 ---@param radioStation int 
----Устанавливает радиостанцию, играющую в машине
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЂР°РґРёРѕСЃС‚Р°РЅС†РёСЋ, РёРіСЂР°СЋС‰СѓСЋ РІ РјР°С€РёРЅРµ
 function setRadioChannel( radioStation ) end
 
 ---@param car Vehicle 
@@ -4117,7 +4117,7 @@ function registerHighestScore( int1,  int2 ) end
 ---@param ped Ped 
 ---@param car Vehicle 
 ---@param passengerSeat int 
----Телепортирует персонажа в автомобиль на выбранное сидение
+---РўРµР»РµРїРѕСЂС‚РёСЂСѓРµС‚ РїРµСЂСЃРѕРЅР°Р¶Р° РІ Р°РІС‚РѕРјРѕР±РёР»СЊ РЅР° РІС‹Р±СЂР°РЅРЅРѕРµ СЃРёРґРµРЅРёРµ
 function warpCharIntoCarAsPassenger( ped,  car,  passengerSeat ) end
 
 ---@param ped Ped 
@@ -4178,11 +4178,11 @@ function detachCharFromCar( ped ) end
 function setCarStayInFastLane( car,  flag ) end
 
 ---@param ped Ped 
----Очищает последний урон нанесённый персонажу
+---РћС‡РёС‰Р°РµС‚ РїРѕСЃР»РµРґРЅРёР№ СѓСЂРѕРЅ РЅР°РЅРµСЃС‘РЅРЅС‹Р№ РїРµСЂСЃРѕРЅР°Р¶Сѓ
 function clearCharLastWeaponDamage( ped ) end
 
 ---@param car Vehicle 
----Очищает последний нанесенный урон машине
+---РћС‡РёС‰Р°РµС‚ РїРѕСЃР»РµРґРЅРёР№ РЅР°РЅРµСЃРµРЅРЅС‹Р№ СѓСЂРѕРЅ РјР°С€РёРЅРµ
 function clearCarLastWeaponDamage( car ) end
 
 ---@param player Player 
@@ -4213,7 +4213,7 @@ function setEnableRcDetonate( detonation ) end
 function setCarRandomRouteSeed( car,  routeSeed ) end
 
 ---@param ped Ped 
----Удаляет все оружие у персонажа
+---РЈРґР°Р»СЏРµС‚ РІСЃРµ РѕСЂСѓР¶РёРµ Сѓ РїРµСЂСЃРѕРЅР°Р¶Р°
 function removeAllCharWeapons( ped ) end
 
 ---@param tank int 
@@ -4300,7 +4300,7 @@ function setEnableRcDetonateOnContact( enable ) end
 
 ---@param ped Ped 
 ---@param locked bool 
----Замораживает координаты персонажа по его хендлу
+---Р—Р°РјРѕСЂР°Р¶РёРІР°РµС‚ РєРѕРѕСЂРґРёРЅР°С‚С‹ РїРµСЂСЃРѕРЅР°Р¶Р° РїРѕ РµРіРѕ С…РµРЅРґР»Сѓ
 function freezeCharPosition( ped,  locked ) end
 
 ---@param ped Ped 
@@ -4335,11 +4335,11 @@ function setPlayerMood( player,  flag,  time ) end
 ---@param Y float 
 function requestCollision( X,  Y ) end
 
----Заставляет актёра присесть или наоборот, встать
+---Р—Р°СЃС‚Р°РІР»СЏРµС‚ Р°РєС‚С‘СЂР° РїСЂРёСЃРµСЃС‚СЊ РёР»Рё РЅР°РѕР±РѕСЂРѕС‚, РІСЃС‚Р°С‚СЊ
 function taskToggleDuck( ) end
 
 ---@param animation string 
----Предварительная загрузка файла анимации
+---РџСЂРµРґРІР°СЂРёС‚РµР»СЊРЅР°СЏ Р·Р°РіСЂСѓР·РєР° С„Р°Р№Р»Р° Р°РЅРёРјР°С†РёРё
 function requestAnimation( animation ) end
 
 ---@param animation string 
@@ -4385,7 +4385,7 @@ function clearExtraColours( fade ) end
 
 ---@param car Vehicle 
 ---@param tire int 
----Спускает шину у автомобиля
+---РЎРїСѓСЃРєР°РµС‚ С€РёРЅСѓ Сѓ Р°РІС‚РѕРјРѕР±РёР»СЏ
 function burstCarTire( car,  tire ) end
 
 ---@param player Player 
@@ -4449,7 +4449,7 @@ function freezeObjectPosition( object,  freeze ) end
 
 ---@param ped Ped 
 ---@param weapon int 
----Удаляет указанное оружие у персонажа
+---РЈРґР°Р»СЏРµС‚ СѓРєР°Р·Р°РЅРЅРѕРµ РѕСЂСѓР¶РёРµ Сѓ РїРµСЂСЃРѕРЅР°Р¶Р°
 function removeWeaponFromChar( ped,  weapon ) end
 
 ---@param player Player 
@@ -4486,7 +4486,7 @@ function linkObjectToInterior( object,  interior ) end
 function setCharNeverTargetted( ped,  untargetable ) end
 
 ---@param toggle bool 
----Устанавливает на все такси нитро
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РЅР° РІСЃРµ С‚Р°РєСЃРё РЅРёС‚СЂРѕ
 function setAllTaxisHaveNitro( toggle ) end
 
 ---@param car Vehicle 
@@ -4500,7 +4500,7 @@ function freezeCharPositionAndDontLoadCollision( ped,  keep ) end
 ---@param set bool 
 function setPlayerIsInStadium( set ) end
 
----\<fs xx-large\>\<fc \#ff0000\>Данная функция не работает в САМП\`е\</fc\>\</fs\>
+---\<fs xx-large\>\<fc \#ff0000\>Р”Р°РЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РЅРµ СЂР°Р±РѕС‚Р°РµС‚ РІ РЎРђРњРџ\`Рµ\</fc\>\</fs\>
 function displayRadar( ) end
 
 ---@param stat int 
@@ -4574,7 +4574,7 @@ function taskJump( ped,  jump ) end
 function taskTired( ped,  timeMS ) end
 
 ---@param ped Ped 
----Отправляет смерть персонажа по его хендлу
+---РћС‚РїСЂР°РІР»СЏРµС‚ СЃРјРµСЂС‚СЊ РїРµСЂСЃРѕРЅР°Р¶Р° РїРѕ РµРіРѕ С…РµРЅРґР»Сѓ
 function taskDie( ped ) end
 
 ---@param ped Ped 
@@ -4609,7 +4609,7 @@ function taskDuck( ped,  timeMS ) end
 function taskUseAtm( ped ) end
 
 ---@param ped Ped 
----Воспроизводит анимацию где персонаж стоит расслабленно и смотрит по сторонам
+---Р’РѕСЃРїСЂРѕРёР·РІРѕРґРёС‚ Р°РЅРёРјР°С†РёСЋ РіРґРµ РїРµСЂСЃРѕРЅР°Р¶ СЃС‚РѕРёС‚ СЂР°СЃСЃР»Р°Р±Р»РµРЅРЅРѕ Рё СЃРјРѕС‚СЂРёС‚ РїРѕ СЃС‚РѕСЂРѕРЅР°Рј
 function taskScratchHead( ped ) end
 
 ---@param ped Ped 
@@ -4647,7 +4647,7 @@ function taskLeaveCarAndFlee( ped,  car,  X,  Y,  Z ) end
 ---@param rideType int 
 ---@param model int 
 ---@param driveType int 
----Заставляет актёра ехать на координаты определенным способом
+---Р—Р°СЃС‚Р°РІР»СЏРµС‚ Р°РєС‚С‘СЂР° РµС…Р°С‚СЊ РЅР° РєРѕРѕСЂРґРёРЅР°С‚С‹ РѕРїСЂРµРґРµР»РµРЅРЅС‹Рј СЃРїРѕСЃРѕР±РѕРј
 function taskCarDriveToCoord( ped,  car,  toX,  toY,  toZ,  speed,  rideType,  model,  driveType ) end
 
 ---@param ped Ped 
@@ -4773,10 +4773,10 @@ function taskGoToCoordAnyMeans( ped,  toX,  toY,  toZ,  mode,  useCar ) end
 ---@param lockY bool 
 ---@param lockF bool 
 ---@param time int 
----Заставляет актёра воспроизвести / сбить анимацию
+---Р—Р°СЃС‚Р°РІР»СЏРµС‚ Р°РєС‚С‘СЂР° РІРѕСЃРїСЂРѕРёР·РІРµСЃС‚Рё / СЃР±РёС‚СЊ Р°РЅРёРјР°С†РёСЋ
 function taskPlayAnim( ped,  animation,  IFP,  framedelta,  loop,  lockX,  lockY,  lockF,  time ) end
 
----Загружает пути NPC в зоне
+---Р—Р°РіСЂСѓР¶Р°РµС‚ РїСѓС‚Рё NPC РІ Р·РѕРЅРµ
 function loadPathNodesInArea( ) end
 
 ---@param ped Ped 
@@ -4813,7 +4813,7 @@ function performSequenceTask( ped,  task ) end
 
 ---@param ped Ped 
 ---@param enable bool 
----Устанавливает коллизию
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РєРѕР»Р»РёР·РёСЋ
 function setCharCollision( ped,  enable ) end
 
 ---@param task int 
@@ -5112,7 +5112,7 @@ function fixCarPanel( car,  componentB ) end
 
 ---@param car Vehicle 
 ---@param tire int 
----Чинит шину у транспортного средства
+---Р§РёРЅРёС‚ С€РёРЅСѓ Сѓ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРіРѕ СЃСЂРµРґСЃС‚РІР°
 function fixCarTire( car,  tire ) end
 
 ---@param object Object 
@@ -5166,7 +5166,7 @@ function taskLookAtCoord( ped,  toX,  toY,  toZ,  timeMS ) end
 
 ---@param ped Ped 
 ---@param hide bool 
----Скрывает все оружие у персонажа
+---РЎРєСЂС‹РІР°РµС‚ РІСЃРµ РѕСЂСѓР¶РёРµ Сѓ РїРµСЂСЃРѕРЅР°Р¶Р°
 function hideCharWeaponForScriptedCutscene( ped,  hide ) end
 
 ---@param group int 
@@ -5175,7 +5175,7 @@ function setGroupDecisionMaker( group,  maker ) end
 
 ---@param player Player 
 ---@param mode bool 
----Переключает флаг бега у игрока
+---РџРµСЂРµРєР»СЋС‡Р°РµС‚ С„Р»Р°Рі Р±РµРіР° Сѓ РёРіСЂРѕРєР°
 function disablePlayerSprint( player,  mode ) end
 
 ---@param ped Ped 
@@ -5225,7 +5225,7 @@ function taskDrivePointRoute( ped,  car,  speed ) end
 ---@param targetY float 
 ---@param targetZ float 
 ---@param energy int 
----Создает летящую пулю на указанных координатах и в указанном направлении.
+---РЎРѕР·РґР°РµС‚ Р»РµС‚СЏС‰СѓСЋ РїСѓР»СЋ РЅР° СѓРєР°Р·Р°РЅРЅС‹С… РєРѕРѕСЂРґРёРЅР°С‚Р°С… Рё РІ СѓРєР°Р·Р°РЅРЅРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё.
 function fireSingleBullet( fromX,  fromY,  fromZ,  targetX,  targetY,  targetZ,  energy ) end
 
 ---@param searchlight Searchlight 
@@ -5256,7 +5256,7 @@ function skipToEndAndStopPlaybackRecordedCar( car ) end
 function taskCarTempAction( ped,  car,  performAction,  timelimit ) end
 
 ---@param enable bool 
----Включает/выключает восстание в Лос-Сантосе, люди воруют вещи, над домами появляе...
+---Р’РєР»СЋС‡Р°РµС‚/РІС‹РєР»СЋС‡Р°РµС‚ РІРѕСЃСЃС‚Р°РЅРёРµ РІ Р›РѕСЃ-РЎР°РЅС‚РѕСЃРµ, Р»СЋРґРё РІРѕСЂСѓСЋС‚ РІРµС‰Рё, РЅР°Рґ РґРѕРјР°РјРё РїРѕСЏРІР»СЏРµ...
 function setLaRiots( enable ) end
 
 ---@param ped Ped 
@@ -5274,7 +5274,7 @@ function attachSearchlightToSearchlightObject( searchlight,  tower,  housing,  b
 ---@param enable bool 
 function switchEmergencyServices( enable ) end
 
----Удаляет чекпоинт по его хендлу
+---РЈРґР°Р»СЏРµС‚ С‡РµРєРїРѕРёРЅС‚ РїРѕ РµРіРѕ С…РµРЅРґР»Сѓ
 function deleteCheckpoint( ) end
 
 ---@param enable bool 
@@ -5448,7 +5448,7 @@ function startSettingUpConversation( ped ) end
 
 ---@param object objhandle 
 ---@param health int 
----Устанавливает уровень здоровья объекту
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СѓСЂРѕРІРµРЅСЊ Р·РґРѕСЂРѕРІСЊСЏ РѕР±СЉРµРєС‚Сѓ
 function setObjectHealth( object,  health ) end
 
 ---@param object Object 
@@ -5604,7 +5604,7 @@ function taskFleeCharAnyMeans( ped,  fleeFrom,  runDistance,  time,  changeCours
 function extendPatrolRoute( X,  Y,  Z,  animation,  IFPFile ) end
 
 ---@param value int 
----Устанавливает увеличение у радара
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СѓРІРµР»РёС‡РµРЅРёРµ Сѓ СЂР°РґР°СЂР°
 function setRadarZoom( value ) end
 
 ---@param shopping GxtString 
@@ -5727,7 +5727,7 @@ function taskGotoCharAiming( ped,  followActor,  minradius,  maxradius ) end
 function taskKillCharOnFootTimed( ped,  attackActor,  time ) end
 
 ---@param ped Ped 
----Выдает джетпак персонажу по его хендлу
+---Р’С‹РґР°РµС‚ РґР¶РµС‚РїР°Рє РїРµСЂСЃРѕРЅР°Р¶Сѓ РїРѕ РµРіРѕ С…РµРЅРґР»Сѓ
 function taskJetpack( ped ) end
 
 ---@param enable bool 
@@ -5771,7 +5771,7 @@ function requestCarRecording( path ) end
 ---@param y float 
 ---@param z float 
 ---@param w float 
----Задаёт кватернион вращения объекта
+---Р—Р°РґР°С‘С‚ РєРІР°С‚РµСЂРЅРёРѕРЅ РІСЂР°С‰РµРЅРёСЏ РѕР±СЉРµРєС‚Р°
 function setObjectQuaternion( object,  x,  y,  z,  w ) end
 
 ---@param car Vehicle 
@@ -5779,7 +5779,7 @@ function setObjectQuaternion( object,  x,  y,  z,  w ) end
 ---@param y float 
 ---@param z float 
 ---@param w float 
----Задаёт кватернион вращения транспортного средства
+---Р—Р°РґР°С‘С‚ РєРІР°С‚РµСЂРЅРёРѕРЅ РІСЂР°С‰РµРЅРёСЏ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРіРѕ СЃСЂРµРґСЃС‚РІР°
 function setVehicleQuaternion( car,  x,  y,  z,  w ) end
 
 ---@param train Vehicle 
@@ -5798,7 +5798,7 @@ function listenToPlayerGroupCommands( ped,  listen ) end
 
 ---@param player Player 
 ---@param can bool 
----Устанавливает, может ли игрок входить и выходить из машины
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚, РјРѕР¶РµС‚ Р»Рё РёРіСЂРѕРє РІС…РѕРґРёС‚СЊ Рё РІС‹С…РѕРґРёС‚СЊ РёР· РјР°С€РёРЅС‹
 function setPlayerEnterCarButton( player,  can ) end
 
 ---@param ped Ped 
@@ -5906,7 +5906,7 @@ function giveMeleeAttackToChar( ped,  fightingStyle,  moves ) end
 
 ---@param car Vehicle 
 ---@param hydraulics bool 
----Устанавливает на автомобиль гидравлику
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РЅР° Р°РІС‚РѕРјРѕР±РёР»СЊ РіРёРґСЂР°РІР»РёРєСѓ
 function setCarHydraulics( car,  hydraulics ) end
 
 ---@param ped Ped 
@@ -5934,7 +5934,7 @@ function taskCharSlideToCoordAndPlayAnim( ped,  toX,  toY,  toZ,  angle,  radius
 ---@param lockY bool 
 ---@param lockF bool 
 ---@param time int 
----Вынуждает актера воссоздавать неприкасаемую анимацию.
+---Р’С‹РЅСѓР¶РґР°РµС‚ Р°РєС‚РµСЂР° РІРѕСЃСЃРѕР·РґР°РІР°С‚СЊ РЅРµРїСЂРёРєР°СЃР°РµРјСѓСЋ Р°РЅРёРјР°С†РёСЋ.
 function taskPlayAnimNonInterruptable( ped,  animation,  IFP,  framedelta,  loop,  lockX,  lockY,  lockF,  time ) end
 
 ---@param startX float 
@@ -5972,7 +5972,7 @@ function taskFollowPatrolRoute( ped,  walkMode,  routeMode ) end
 
 ---@param ped Ped 
 ---@param skill int 
----Устанавливает персонажу уровень владения оружием(скилл)
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РїРµСЂСЃРѕРЅР°Р¶Сѓ СѓСЂРѕРІРµРЅСЊ РІР»Р°РґРµРЅРёСЏ РѕСЂСѓР¶РёРµРј(СЃРєРёР»Р»)
 function setCharWeaponSkill( ped,  skill ) end
 
 ---@param size int 
@@ -5987,7 +5987,7 @@ function setTextEdge( size,  r,  g,  b,  a ) end
 function setCarEngineBroken( car,  broken ) end
 
 ---@param enable bool 
----Включает вид бампера автомобиля для камеры
+---Р’РєР»СЋС‡Р°РµС‚ РІРёРґ Р±Р°РјРїРµСЂР° Р°РІС‚РѕРјРѕР±РёР»СЏ РґР»СЏ РєР°РјРµСЂС‹
 function setFirstPersonInCarCameraMode( enable ) end
 
 ---@param ped Ped 
@@ -6000,7 +6000,7 @@ function taskGreetPartner( ped,  ped2,  unk1,  unk2 ) end
 function setHeliBladesFullSpeed( heli ) end
 
 ---@param state bool 
----Устанавливает отображение/скрытые худа
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ/СЃРєСЂС‹С‚С‹Рµ С…СѓРґР°
 function displayHud( state ) end
 
 ---@param object Object 
@@ -6116,7 +6116,7 @@ function startPlaybackRecordedCarLooped( car,  path ) end
 
 ---@param ped Ped 
 ---@param interior int 
----Устанавливает интерьер актёру
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РёРЅС‚РµСЂСЊРµСЂ Р°РєС‚С‘СЂСѓ
 function setCharInterior( ped,  interior ) end
 
 ---@param X float 
@@ -6265,7 +6265,7 @@ function setAlwaysDraw3dMarkers( set ) end
 function streamScript( script ) end
 
 ---@param set bool 
----Захват/отображение территорий в игре
+---Р—Р°С…РІР°С‚/РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ С‚РµСЂСЂРёС‚РѕСЂРёР№ РІ РёРіСЂРµ
 function setGangWarsTrainingMission( set ) end
 
 ---@param ped Ped 
@@ -6279,11 +6279,11 @@ function setCharHasUsedEntryExit( ped,  X,  Y,  radius ) end
 function setCharMaxHealth( ped,  health ) end
 
 ---@param enable bool 
----Включает игроку ночное зрение
+---Р’РєР»СЋС‡Р°РµС‚ РёРіСЂРѕРєСѓ РЅРѕС‡РЅРѕРµ Р·СЂРµРЅРёРµ
 function setNightVision( enable ) end
 
 ---@param enable bool 
----Включает игроку инфракрасное зрение
+---Р’РєР»СЋС‡Р°РµС‚ РёРіСЂРѕРєСѓ РёРЅС„СЂР°РєСЂР°СЃРЅРѕРµ Р·СЂРµРЅРёРµ
 function setInfraredVision( enable ) end
 
 ---@param zone GxtString 
@@ -6443,7 +6443,7 @@ function setCoordBlipAppearance( checkpoint,  type ) end
 function setHeathazeEffect( enable ) end
 
 ---@param object Object 
----Очищает объект от последнего нанесенного урона
+---РћС‡РёС‰Р°РµС‚ РѕР±СЉРµРєС‚ РѕС‚ РїРѕСЃР»РµРґРЅРµРіРѕ РЅР°РЅРµСЃРµРЅРЅРѕРіРѕ СѓСЂРѕРЅР°
 function clearObjectLastWeaponDamage( object ) end
 
 ---@param player Player 
@@ -6490,7 +6490,7 @@ function switchAudioZone( zone,  enableSound ) end
 
 ---@param car vehicle 
 ---@param on bool 
----Устанавливает статус двигателя машине(включен, выключен)
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЃС‚Р°С‚СѓСЃ РґРІРёРіР°С‚РµР»СЏ РјР°С€РёРЅРµ(РІРєР»СЋС‡РµРЅ, РІС‹РєР»СЋС‡РµРЅ)
 function setCarEngineOn( car,  on ) end
 
 ---@param car Vehicle 
@@ -6534,7 +6534,7 @@ function switchAmbientPlanes( enable ) end
 
 ---@param status bool 
 ---@param value int 
----Затемняет экран.
+---Р—Р°С‚РµРјРЅСЏРµС‚ СЌРєСЂР°РЅ.
 function setDarknessEffect( status,  value ) end
 
 ---@param externalScript int 
@@ -6610,7 +6610,7 @@ function setGroupFollowStatus( group,  status ) end
 function setSearchlightClipIfColliding( searchlight,  flag ) end
 
 ---@param ped Ped 
----Помещает камеру перед указанным игроком
+---РџРѕРјРµС‰Р°РµС‚ РєР°РјРµСЂСѓ РїРµСЂРµРґ СѓРєР°Р·Р°РЅРЅС‹Рј РёРіСЂРѕРєРѕРј
 function setCameraInFrontOfChar( ped ) end
 
 ---@param ped Ped 
@@ -6751,7 +6751,7 @@ function pauseCurrentBeatTrack( paused ) end
 
 ---@param player Player 
 ---@param scrollable bool 
----Устанавливает возможность скролла оружия игроку.
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ СЃРєСЂРѕР»Р»Р° РѕСЂСѓР¶РёСЏ РёРіСЂРѕРєСѓ.
 function setPlayerWeaponsScrollable( player,  scrollable ) end
 
 ---@param atX float 
@@ -6771,7 +6771,7 @@ function awardPlayerMissionRespect( respect ) end
 
 ---@param car Vehicle 
 ---@param collision bool 
----Устанавливает / убирает коллизию транспортному средству
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ / СѓР±РёСЂР°РµС‚ РєРѕР»Р»РёР·РёСЋ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРјСѓ СЃСЂРµРґСЃС‚РІСѓ
 function setCarCollision( car,  collision ) end
 
 ---@param car Vehicle 
@@ -6906,7 +6906,7 @@ function setPetrolTankWeakpoint( car,  enabled ) end
 
 ---@param player Player 
 ---@param modelId Model 
----Меняет скин игрока
+---РњРµРЅСЏРµС‚ СЃРєРёРЅ РёРіСЂРѕРєР°
 function setPlayerModel( player,  modelId ) end
 
 ---@param ped Ped 
@@ -6919,7 +6919,7 @@ function removeCharFromCarMaintainPosition( ped,  car ) end
 ---@param EP bool 
 ---@param CP bool 
 ---@param MP bool 
----Устанавливает иммунитет объекту
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РёРјРјСѓРЅРёС‚РµС‚ РѕР±СЉРµРєС‚Сѓ
 function setObjectProofs( object,  BP,  FP,  EP,  CP,  MP ) end
 
 ---@param train Vehicle 
@@ -7038,7 +7038,7 @@ function enableDisabledAttractorsOnObject( object,  enable ) end
 function loadSceneInDirection( coordX,  coordY,  coordZ,  angle ) end
 
 ---@param style int 
----Удаляет стилизованный текст, который был воспроизведен через printBig
+---РЈРґР°Р»СЏРµС‚ СЃС‚РёР»РёР·РѕРІР°РЅРЅС‹Р№ С‚РµРєСЃС‚, РєРѕС‚РѕСЂС‹Р№ Р±С‹Р» РІРѕСЃРїСЂРѕРёР·РІРµРґРµРЅ С‡РµСЂРµР· printBig
 function clearThisPrintBigNow( style ) end
 
 ---@param stat int 
@@ -7085,7 +7085,7 @@ function taskPlayAnimSecondary( ped,  animation,  IFP,  framedelta,  loopA,  loc
 
 ---@param heli Vehicle 
 ---@param disable bool 
----Выключает звуки вертолёта
+---Р’С‹РєР»СЋС‡Р°РµС‚ Р·РІСѓРєРё РІРµСЂС‚РѕР»С‘С‚Р°
 function disableHeliAudio( heli,  disable ) end
 
 ---@param ped Ped 
@@ -7093,7 +7093,7 @@ function disableHeliAudio( heli,  disable ) end
 function taskHandGesture( ped,  ped2 ) end
 
 ---@param unk bool 
----Сделать снимок экрана, снимок будет сохранён в Мои Документы/Andreas User Files\\...
+---РЎРґРµР»Р°С‚СЊ СЃРЅРёРјРѕРє СЌРєСЂР°РЅР°, СЃРЅРёРјРѕРє Р±СѓРґРµС‚ СЃРѕС…СЂР°РЅС‘РЅ РІ РњРѕРё Р”РѕРєСѓРјРµРЅС‚С‹/Andreas User Files\\...
 function takePhoto( unk ) end
 
 ---@param stat int 
@@ -7132,7 +7132,7 @@ function setDeathWeaponsPersist( ped,  persist ) end
 
 ---@param ped Ped 
 ---@param speed float 
----Устанавливает скорость плавания игроку
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЃРєРѕСЂРѕСЃС‚СЊ РїР»Р°РІР°РЅРёСЏ РёРіСЂРѕРєСѓ
 function setCharSwimSpeed( ped,  speed ) end
 
 ---@param flag bool 
@@ -7154,7 +7154,7 @@ function taskFollowPathNodesToCoordWithRadius( ped,  toX,  toY,  toZ,  mode,  ti
 function setPhotoCameraEffect( firstPersonView ) end
 
 ---@param car Vehicle 
----Чинит транспортное средство
+---Р§РёРЅРёС‚ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРµ СЃСЂРµРґСЃС‚РІРѕ
 function fixCar( car ) end
 
 ---@param player Player 
@@ -7200,155 +7200,155 @@ function switchObjectBrains( externalScript,  canBeStreamedIn ) end
 ---@param enable bool 
 function allowPauseInWidescreen( enable ) end
 
----Устанавливает камеру позади игрока
+---РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РєР°РјРµСЂСѓ РїРѕР·Р°РґРё РёРіСЂРѕРєР°
 function setCameraBehindPlayer( ) end
 
 ---@param bGameMessage bool 
 ---@param bScriptsMessage bool 
----Помечает текущее обрабатываемое оконное сообщение для игнорирования
+---РџРѕРјРµС‡Р°РµС‚ С‚РµРєСѓС‰РµРµ РѕР±СЂР°Р±Р°С‚С‹РІР°РµРјРѕРµ РѕРєРѕРЅРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ РёРіРЅРѕСЂРёСЂРѕРІР°РЅРёСЏ
 function consumeWindowMessage( bGameMessage,  bScriptsMessage ) end
 
 ---@return nHandle local 
----Возвращает хэндл персонажа по указателю на экземляр класса CPed.
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ С…СЌРЅРґР» РїРµСЂСЃРѕРЅР°Р¶Р° РїРѕ СѓРєР°Р·Р°С‚РµР»СЋ РЅР° СЌРєР·РµРјР»СЏСЂ РєР»Р°СЃСЃР° CPed.
 function getCharPointerHandle() end
 
 ---@param nHandle int 
----Возвращает указатель на объект класса CPed по хэндлу персонажа
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РѕР±СЉРµРєС‚ РєР»Р°СЃСЃР° CPed РїРѕ С…СЌРЅРґР»Сѓ РїРµСЂСЃРѕРЅР°Р¶Р°
 function getCharPointer( nHandle ) end
 
----Возвращает хендл игрока
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ С…РµРЅРґР» РёРіСЂРѕРєР°
 function getPlayerPedHandle() end
 
 ---@param Event String 
 ---@param Callback function 
----Добавляет обработчик события по названию
+---Р”РѕР±Р°РІР»СЏРµС‚ РѕР±СЂР°Р±РѕС‚С‡РёРє СЃРѕР±С‹С‚РёСЏ РїРѕ РЅР°Р·РІР°РЅРёСЋ
 function addEventHandler( Event,  Callback ) end
 
 ---@param nKey int 
----Проверяет, зажата ли клавиша
+---РџСЂРѕРІРµСЂСЏРµС‚, Р·Р°Р¶Р°С‚Р° Р»Рё РєР»Р°РІРёС€Р°
 function isKeyDown( nKey ) end
 
 ---@param nKey int 
----Проверяет, была ли нажата клавиша
+---РџСЂРѕРІРµСЂСЏРµС‚, Р±С‹Р»Р° Р»Рё РЅР°Р¶Р°С‚Р° РєР»Р°РІРёС€Р°
 function isKeyPressed( nKey ) end
 
 ---@param nKey int 
----Проверяет была ли клавиша отпущена после нажатия
+---РџСЂРѕРІРµСЂСЏРµС‚ Р±С‹Р»Р° Р»Рё РєР»Р°РІРёС€Р° РѕС‚РїСѓС‰РµРЅР° РїРѕСЃР»Рµ РЅР°Р¶Р°С‚РёСЏ
 function isKeyReleased( nKey ) end
 
 ---@param szText String 
 ---@param nTime int 
 ---@param nFlags int 
 ---@param bPreviousBrief bool 
----Добавляет сообщение на экран ввиде субтитров
+---Р”РѕР±Р°РІР»СЏРµС‚ СЃРѕРѕР±С‰РµРЅРёРµ РЅР° СЌРєСЂР°РЅ РІРІРёРґРµ СЃСѓР±С‚РёС‚СЂРѕРІ
 function addMessage( szText,  nTime,  nFlags,  bPreviousBrief ) end
 
 ---@param szScriptName String 
----Загружает скрипт по названию
+---Р—Р°РіСЂСѓР¶Р°РµС‚ СЃРєСЂРёРїС‚ РїРѕ РЅР°Р·РІР°РЅРёСЋ
 function loadScript( szScriptName ) end
 
 ---@param szScriptName String 
----Выгружает скрипт по названию
+---Р’С‹РіСЂСѓР¶Р°РµС‚ СЃРєСЂРёРїС‚ РїРѕ РЅР°Р·РІР°РЅРёСЋ
 function unloadScript( szScriptName ) end
 
----Возвращает дескриптор окна
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РґРµСЃРєСЂРёРїС‚РѕСЂ РѕРєРЅР°
 function getGameHWND() end
 
----Возвращает указатель на используемый игрой экземпляр класса IDirect3DDevice11
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РёСЃРїРѕР»СЊР·СѓРµРјС‹Р№ РёРіСЂРѕР№ СЌРєР·РµРјРїР»СЏСЂ РєР»Р°СЃСЃР° IDirect3DDevice11
 function getD3DDevicePtr() end
 
----Возвращает очередь из изображений, ожидающих вывода на экран
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РѕС‡РµСЂРµРґСЊ РёР· РёР·РѕР±СЂР°Р¶РµРЅРёР№, РѕР¶РёРґР°СЋС‰РёС… РІС‹РІРѕРґР° РЅР° СЌРєСЂР°РЅ
 function getDXGISwapChainPtr() end
 
----Возвращает указатель на D3DDeviceContextPtr
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° D3DDeviceContextPtr
 function getD3DDeviceContextPtr() end
 
 ---@param bShow bool 
 ---@param bLockPlayer bool 
----Показывает или скрывает системный курсор, блокируя вращение камеры и управление игроком (опционально)
+---РџРѕРєР°Р·С‹РІР°РµС‚ РёР»Рё СЃРєСЂС‹РІР°РµС‚ СЃРёСЃС‚РµРјРЅС‹Р№ РєСѓСЂСЃРѕСЂ, Р±Р»РѕРєРёСЂСѓСЏ РІСЂР°С‰РµРЅРёРµ РєР°РјРµСЂС‹ Рё СѓРїСЂР°РІР»РµРЅРёРµ РёРіСЂРѕРєРѕРј (РѕРїС†РёРѕРЅР°Р»СЊРЅРѕ)
 function showCursor( bShow,  bLockPlayer ) end
 
 ---@param nAddr int 
 ---@param nSize int 
 ---@return Result local 
----Читает значение из памяти процесса по указанному адресу
+---Р§РёС‚Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ РёР· РїР°РјСЏС‚Рё РїСЂРѕС†РµСЃСЃР° РїРѕ СѓРєР°Р·Р°РЅРЅРѕРјСѓ Р°РґСЂРµСЃСѓ
 function readMemory( nAddr,  nSize ) end
 
 ---@param nAddr int 
 ---@param nSize int 
----Записывает значение в память процесса по указанному адресу
+---Р—Р°РїРёСЃС‹РІР°РµС‚ Р·РЅР°С‡РµРЅРёРµ РІ РїР°РјСЏС‚СЊ РїСЂРѕС†РµСЃСЃР° РїРѕ СѓРєР°Р·Р°РЅРЅРѕРјСѓ Р°РґСЂРµСЃСѓ
 function writeMemory( nAddr,  nSize ) end
 
----Возвращает путь к папке TrilogyLoader
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РїСѓС‚СЊ Рє РїР°РїРєРµ TrilogyLoader
 function getWorkingDirectory() end
 
 ---@param szPath String 
 ---@return bResult local 
----Проверяет директорию на существование
+---РџСЂРѕРІРµСЂСЏРµС‚ РґРёСЂРµРєС‚РѕСЂРёСЋ РЅР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёРµ
 function doesDirectoryExist( szPath ) end
 
 ---@param nValue int 
 ---@return szPath local 
----Получает путь к пользовательской или системной директории по её CSIDL-идентификатору.
+---РџРѕР»СѓС‡Р°РµС‚ РїСѓС‚СЊ Рє РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРѕР№ РёР»Рё СЃРёСЃС‚РµРјРЅРѕР№ РґРёСЂРµРєС‚РѕСЂРёРё РїРѕ РµС‘ CSIDL-РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂСѓ.
 function getFolderPath( nValue ) end
 
 ---@param nSize int 
 ---@return nResult local 
----Выделяет память и возвращает указатель на выделенную область.
+---Р’С‹РґРµР»СЏРµС‚ РїР°РјСЏС‚СЊ Рё РІРѕР·РІСЂР°С‰Р°РµС‚ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РІС‹РґРµР»РµРЅРЅСѓСЋ РѕР±Р»Р°СЃС‚СЊ.
 function allocateMemory( nSize ) end
 
 ---@param nPtr int 
----Освобождает выделенную память
+---РћСЃРІРѕР±РѕР¶РґР°РµС‚ РІС‹РґРµР»РµРЅРЅСѓСЋ РїР°РјСЏС‚СЊ
 function freeMemory( nPtr ) end
 
 ---@param fValue float 
 ---@return nResult local 
----Представляет значение числа с плавающей точкой как целое
+---РџСЂРµРґСЃС‚Р°РІР»СЏРµС‚ Р·РЅР°С‡РµРЅРёРµ С‡РёСЃР»Р° СЃ РїР»Р°РІР°СЋС‰РµР№ С‚РѕС‡РєРѕР№ РєР°Рє С†РµР»РѕРµ
 function representFloatAsInt( fValue ) end
 
 ---@param nValue int 
 ---@return fResult local 
----Представляет значение целого в виде числа с плавающей точкой
+---РџСЂРµРґСЃС‚Р°РІР»СЏРµС‚ Р·РЅР°С‡РµРЅРёРµ С†РµР»РѕРіРѕ РІ РІРёРґРµ С‡РёСЃР»Р° СЃ РїР»Р°РІР°СЋС‰РµР№ С‚РѕС‡РєРѕР№
 function representIntAsFloat( nValue ) end
 
 ---@param szUrl String 
 ---@param szPath String 
 ---@param Callback function 
 ---@return nStatus local 
----Загружает файл из интернета по URL по протоколу HTTP. Процесс загрузки полностью контролируем с помощью обработчика загрузки и может быть отменён.
+---Р—Р°РіСЂСѓР¶Р°РµС‚ С„Р°Р№Р» РёР· РёРЅС‚РµСЂРЅРµС‚Р° РїРѕ URL РїРѕ РїСЂРѕС‚РѕРєРѕР»Сѓ HTTP. РџСЂРѕС†РµСЃСЃ Р·Р°РіСЂСѓР·РєРё РїРѕР»РЅРѕСЃС‚СЊСЋ РєРѕРЅС‚СЂРѕР»РёСЂСѓРµРј СЃ РїРѕРјРѕС‰СЊСЋ РѕР±СЂР°Р±РѕС‚С‡РёРєР° Р·Р°РіСЂСѓР·РєРё Рё РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚РјРµРЅС‘РЅ.
 function downloadUrlToFile( szUrl,  szPath,  Callback ) end
 
----Возвращает путь до директории игры
+---Р’РѕР·РІСЂР°С‰Р°РµС‚ РїСѓС‚СЊ РґРѕ РґРёСЂРµРєС‚РѕСЂРёРё РёРіСЂС‹
 function getGameDirectory() end
 
 ---@param nHandle int 
----Выгружает динамическую библиотеку по её хендлу
+---Р’С‹РіСЂСѓР¶Р°РµС‚ РґРёРЅР°РјРёС‡РµСЃРєСѓСЋ Р±РёР±Р»РёРѕС‚РµРєСѓ РїРѕ РµС‘ С…РµРЅРґР»Сѓ
 function freeDynamicLibrary( nHandle ) end
 
 ---@param szProcStr String 
 ---@param nHandle int 
 ---@return bResult local 
----Получает адрес экспортируемой функции по названию и хендлу библиотеки
+---РџРѕР»СѓС‡Р°РµС‚ Р°РґСЂРµСЃ СЌРєСЃРїРѕСЂС‚РёСЂСѓРµРјРѕР№ С„СѓРЅРєС†РёРё РїРѕ РЅР°Р·РІР°РЅРёСЋ Рё С…РµРЅРґР»Сѓ Р±РёР±Р»РёРѕС‚РµРєРё
 function getDynamicLibraryProcedure( szProcStr,  nHandle ) end
 
 ---@param szPath String 
 ---@return bResult local 
----Создаёт иерархию директорий для указанного пути
+---РЎРѕР·РґР°С‘С‚ РёРµСЂР°СЂС…РёСЋ РґРёСЂРµРєС‚РѕСЂРёР№ РґР»СЏ СѓРєР°Р·Р°РЅРЅРѕРіРѕ РїСѓС‚Рё
 function createDirectory( szPath ) end
 
----Вызывается каждый раз при обработке сообщения окна игры, будь то нажатия клавиш, смена разрешения или движения мышью
+---Р’С‹Р·С‹РІР°РµС‚СЃСЏ РєР°Р¶РґС‹Р№ СЂР°Р· РїСЂРё РѕР±СЂР°Р±РѕС‚РєРµ СЃРѕРѕР±С‰РµРЅРёСЏ РѕРєРЅР° РёРіСЂС‹, Р±СѓРґСЊ С‚Рѕ РЅР°Р¶Р°С‚РёСЏ РєР»Р°РІРёС€, СЃРјРµРЅР° СЂР°Р·СЂРµС€РµРЅРёСЏ РёР»Рё РґРІРёР¶РµРЅРёСЏ РјС‹С€СЊСЋ
 function onWindowMessage() end
 
----Вызывается каждый раз при обновлении таймера игры
+---Р’С‹Р·С‹РІР°РµС‚СЃСЏ РєР°Р¶РґС‹Р№ СЂР°Р· РїСЂРё РѕР±РЅРѕРІР»РµРЅРёРё С‚Р°Р№РјРµСЂР° РёРіСЂС‹
 function onUpdate() end
 
----Вызывается каждый раз при выгрузке скрипта
+---Р’С‹Р·С‹РІР°РµС‚СЃСЏ РєР°Р¶РґС‹Р№ СЂР°Р· РїСЂРё РІС‹РіСЂСѓР·РєРµ СЃРєСЂРёРїС‚Р°
 function onExitScript() end
 
----Вызывается каждый раз при загрузке скрипта
+---Р’С‹Р·С‹РІР°РµС‚СЃСЏ РєР°Р¶РґС‹Р№ СЂР°Р· РїСЂРё Р·Р°РіСЂСѓР·РєРµ СЃРєСЂРёРїС‚Р°
 function onScriptLoad() end
 
----Вызывается один раз при инициализации игровых структур
+---Р’С‹Р·С‹РІР°РµС‚СЃСЏ РѕРґРёРЅ СЂР°Р· РїСЂРё РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РёРіСЂРѕРІС‹С… СЃС‚СЂСѓРєС‚СѓСЂ
 function onGameInit() end
 
 ---@param x1 float 
@@ -7358,7 +7358,7 @@ function onGameInit() end
 ---@param color int 
 ---@param thickness float 
 ---@return nid local 
----Рисует линию на экране
+---Р РёСЃСѓРµС‚ Р»РёРЅРёСЋ РЅР° СЌРєСЂР°РЅРµ
 function renderAddLine( x1,  y1,  x2,  y2,  color,  thickness ) end
 
 ---@param p_minX float 
@@ -7370,7 +7370,7 @@ function renderAddLine( x1,  y1,  x2,  y2,  color,  thickness ) end
 ---@param flags Flags 
 ---@param thickness float 
 ---@return nId local 
----Рисует рект на экране
+---Р РёСЃСѓРµС‚ СЂРµРєС‚ РЅР° СЌРєСЂР°РЅРµ
 function renderAddRect( p_minX,  p_minY,  p_maxX,  p_maxY,  col,  rounding,  flags,  thickness ) end
 
 ---@param p_minX float 
@@ -7381,7 +7381,7 @@ function renderAddRect( p_minX,  p_minY,  p_maxX,  p_maxY,  col,  rounding,  fla
 ---@param rounding float 
 ---@param flags Flags 
 ---@return nId local 
----Рисует заполненный рект на экране
+---Р РёСЃСѓРµС‚ Р·Р°РїРѕР»РЅРµРЅРЅС‹Р№ СЂРµРєС‚ РЅР° СЌРєСЂР°РЅРµ
 function renderAddRectFilled( p_minX,  p_min,  p_maxX,  p_maxY,  col,  rounding,  flags ) end
 
 ---@param pX1 float 
@@ -7395,7 +7395,7 @@ function renderAddRectFilled( p_minX,  p_min,  p_maxX,  p_maxY,  col,  rounding,
 ---@param col int 
 ---@param thickness float 
 ---@return nId local 
----Рисует чётырехугольник на экране
+---Р РёСЃСѓРµС‚ С‡С‘С‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє РЅР° СЌРєСЂР°РЅРµ
 function renderAddQuad( pX1,  pY1,  pX2,  pY2,  pX3,  pY3,  pX4,  pY4,  col,  thickness ) end
 
 ---@param pX1 float 
@@ -7409,7 +7409,7 @@ function renderAddQuad( pX1,  pY1,  pX2,  pY2,  pX3,  pY3,  pX4,  pY4,  col,  th
 ---@param col int 
 ---@param thickness float 
 ---@return nId local 
----Рисует заполненный чётырехугольник на экране
+---Р РёСЃСѓРµС‚ Р·Р°РїРѕР»РЅРµРЅРЅС‹Р№ С‡С‘С‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє РЅР° СЌРєСЂР°РЅРµ
 function renderAddQuadFilled( pX1,  pY1,  pX2,  pY2,  pX3,  pY3,  pX4,  pY4,  col,  thickness ) end
 
 ---@param pX1 float 
@@ -7421,7 +7421,7 @@ function renderAddQuadFilled( pX1,  pY1,  pX2,  pY2,  pX3,  pY3,  pX4,  pY4,  co
 ---@param col int 
 ---@param thickness float 
 ---@return nId local 
----Рисует треугольник
+---Р РёСЃСѓРµС‚ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 function renderAddTriangle( pX1,  pY1,  pX2,  pY2,  pX3,  pY3,  col,  thickness ) end
 
 ---@param pX1 float 
@@ -7432,7 +7432,7 @@ function renderAddTriangle( pX1,  pY1,  pX2,  pY2,  pX3,  pY3,  col,  thickness 
 ---@param pY3 float 
 ---@param col int 
 ---@return nId local 
----Рисует заполненный треугольник
+---Р РёСЃСѓРµС‚ Р·Р°РїРѕР»РЅРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 function renderAddTriangleFilled( pX1,  pY1,  pX2,  pY2,  pX3,  pY3,  col ) end
 
 ---@param centerX float 
@@ -7442,7 +7442,7 @@ function renderAddTriangleFilled( pX1,  pY1,  pX2,  pY2,  pX3,  pY3,  col ) end
 ---@param num_segments int 
 ---@param thickness float 
 ---@return nId local 
----Рисует круг
+---Р РёСЃСѓРµС‚ РєСЂСѓРі
 function renderAddCircle( centerX,  centerY,  radius,  col,  num_segments,  thickness ) end
 
 ---@param centerX float 
@@ -7451,7 +7451,7 @@ function renderAddCircle( centerX,  centerY,  radius,  col,  num_segments,  thic
 ---@param col int 
 ---@param num_segments int 
 ---@return nId local 
----Рисует заполненный круг
+---Р РёСЃСѓРµС‚ Р·Р°РїРѕР»РЅРµРЅРЅС‹Р№ РєСЂСѓРі
 function renderAddCircleFilled( centerX,  centerY,  radius,  col,  num_segments ) end
 
 ---@param centerX float 
@@ -7461,7 +7461,7 @@ function renderAddCircleFilled( centerX,  centerY,  radius,  col,  num_segments 
 ---@param num_segments int 
 ---@param thickness float 
 ---@return nId local 
----Рисует Ngon
+---Р РёСЃСѓРµС‚ Ngon
 function renderAddNgon( centerX,  centerY,  radius,  col,  num_segments,  thickness ) end
 
 ---@param centerX float 
@@ -7470,7 +7470,7 @@ function renderAddNgon( centerX,  centerY,  radius,  col,  num_segments,  thickn
 ---@param col int 
 ---@param num_segments int 
 ---@return nId local 
----Рисует заполненный Ngon
+---Р РёСЃСѓРµС‚ Р·Р°РїРѕР»РЅРµРЅРЅС‹Р№ Ngon
 function renderAddNgonFilled( centerX,  centerY,  radius,  col,  num_segments ) end
 
 ---@param centerX float 
@@ -7481,7 +7481,7 @@ function renderAddNgonFilled( centerX,  centerY,  radius,  col,  num_segments ) 
 ---@param num_segments int 
 ---@param thickness float 
 ---@return nId local 
----Рисует Эллипс
+---Р РёСЃСѓРµС‚ Р­Р»Р»РёРїСЃ
 function renderAddEllipse( centerX,  centerY,  radius,  col,  rot,  num_segments,  thickness ) end
 
 ---@param centerX float 
@@ -7491,7 +7491,7 @@ function renderAddEllipse( centerX,  centerY,  radius,  col,  rot,  num_segments
 ---@param rot float 
 ---@param num_segments int 
 ---@return nId local 
----Рисует заполненный Эллипс
+---Р РёСЃСѓРµС‚ Р·Р°РїРѕР»РЅРµРЅРЅС‹Р№ Р­Р»Р»РёРїСЃ
 function renderAddEllipseFilled( centerX,  centerY,  radius,  col,  rot,  num_segments ) end
 
 ---@param pX1 float 
@@ -7506,7 +7506,7 @@ function renderAddEllipseFilled( centerX,  centerY,  radius,  col,  rot,  num_se
 ---@param thickness float 
 ---@param num_segments int 
 ---@return nId local 
----Рисует кубическую(Cubic) кривую Безье
+---Р РёСЃСѓРµС‚ РєСѓР±РёС‡РµСЃРєСѓСЋ(Cubic) РєСЂРёРІСѓСЋ Р‘РµР·СЊРµ
 function renderAddBezierCubic( pX1,  pY1,  pX2,  pY2,  pX3,  pY3,  pX4,  pY4,  col,  thickness,  num_segments ) end
 
 ---@param pX1 float 
@@ -7519,7 +7519,7 @@ function renderAddBezierCubic( pX1,  pY1,  pX2,  pY2,  pX3,  pY3,  pX4,  pY4,  c
 ---@param thickness float 
 ---@param num_segments int 
 ---@return nId local 
----Рисует кубическую(Quadratic) кривую Безье
+---Р РёСЃСѓРµС‚ РєСѓР±РёС‡РµСЃРєСѓСЋ(Quadratic) РєСЂРёРІСѓСЋ Р‘РµР·СЊРµ
 function renderAddBezierQuadratic( pX1,  pY1,  pX2,  pY2,  pX3,  pY3,  col,  thickness,  num_segments ) end
 
 ---@param X float 
@@ -7528,10 +7528,10 @@ function renderAddBezierQuadratic( pX1,  pY1,  pX2,  pY2,  pX3,  pY3,  col,  thi
 ---@param font_size float 
 ---@param text String 
 ---@return nId local 
----Рисует текст на экране
+---Р РёСЃСѓРµС‚ С‚РµРєСЃС‚ РЅР° СЌРєСЂР°РЅРµ
 function renderAddText( X,  Y,  col,  font_size,  text ) end
 
 ---@param nIn int 
----Завершает отрисовку объекта по ID
+---Р—Р°РІРµСЂС€Р°РµС‚ РѕС‚СЂРёСЃРѕРІРєСѓ РѕР±СЉРµРєС‚Р° РїРѕ ID
 function renderEnd( nIn ) end
 
