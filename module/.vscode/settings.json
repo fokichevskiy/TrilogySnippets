@@ -1,8 +1,0 @@
-{
-  "Lua.diagnostics.disable": [
-    "missing-return"
-  ],
-  "[lua]": {
-    "files.encoding": "utf8",
-  },
-}
