@@ -7390,9 +7390,10 @@ function setCameraBehindPlayer() end
 ---Помечает текущее обрабатываемое оконное сообщение для игнорирования
 function consumeWindowMessage(bGameMessage, bScriptsMessage) end
 
+---@param nPointer int
 ---@return nHandle local
 ---Возвращает хэндл персонажа по указателю на экземляр класса CPed.
-function getCharPointerHandle() end
+function getCharPointerHandle(nPointer) end
 
 ---@param nHandle int
 ---Возвращает указатель на объект класса CPed по хэндлу персонажа
