@@ -10,13 +10,5 @@
       "deprecated",
       "different-requires"
     ],
-    "Lua.workspace.ignoreDir": ["luajit/", "luarocks/"],
-    "[lua]": {
-      "files.encoding": "windows1251",
-      "files.autoGuessEncoding": true,
-      "editor.tabSize": 4,
-      "editor.formatOnSave": true,
-      "editor.defaultFormatter": "JohnnyMorganz.stylua"
-    }
   }
 }
