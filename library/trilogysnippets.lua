@@ -7390,10 +7390,9 @@ function setCameraBehindPlayer() end
 ---Помечает текущее обрабатываемое оконное сообщение для игнорирования
 function consumeWindowMessage(bGameMessage, bScriptsMessage) end
 
----@param nPointer int
 ---@return nHandle local
 ---Возвращает хэндл персонажа по указателю на экземляр класса CPed.
-function getCharPointerHandle(nPointer) end
+function getCharPointerHandle() end
 
 ---@param nHandle int
 ---Возвращает указатель на объект класса CPed по хэндлу персонажа
@@ -7434,15 +7433,19 @@ function loadScript(szScriptName) end
 ---Выгружает скрипт по названию
 function unloadScript(szScriptName) end
 
+---@return GameHWND
 ---Возвращает дескриптор окна
 function getGameHWND() end
 
+---@return D3DDevicePtr
 ---Возвращает указатель на используемый игрой экземпляр класса IDirect3DDevice11
 function getD3DDevicePtr() end
 
+---@return DXGISwapChainPtr
 ---Возвращает очередь из изображений, ожидающих вывода на экран
 function getDXGISwapChainPtr() end
 
+---@return D3DDeviceContextPtr 
 ---Возвращает указатель на D3DDeviceContextPtr
 function getD3DDeviceContextPtr() end
 
@@ -7717,3 +7720,253 @@ function renderAddText(X, Y, col, font_size, text) end
 ---@param nIn int
 ---Завершает отрисовку объекта по ID
 function renderEnd(nIn) end
+
+---@param szString string
+---@param nColor int
+---Отпарвка визуального сообщения в чат
+function sampAddChatMessage(szString, nColor) end
+
+---@param szString string
+---Отправка сообщения в серверный чат от лица локального игрока
+function sampSendChat(szString) end
+
+---@param szCommand string
+---Отправка команды в чат
+function sampSendCommand(szCommand) end
+
+---@param szString string
+---@param callback function
+---Регистрация чат команды
+function sampRegisterChatCommand(szString, callback) end
+
+---@param szCode string
+---Отправляет JS код браузеру
+function executeUIBrowserJSCode(szCode) end
+
+---@param szMessage string
+---Отправляет сообщение обработчику браузера
+function sendUIBrowserMessage(szMessage) end
+
+---@param bIsEnabled bool
+---Отключает автоматическую смену времени мультиплеером
+function sampSetAutoGameClockUpdate(bIsEnabled) end
+
+---@param bIsEnabled bool
+---Отключает автоматическую смену погоды мультиплеером
+function sampSetAutoGameWeatherUpdate(bIsEnabled) end
+
+---@param bIsEnabled bool
+---Включает/выключает курсор мыши
+function sampToggleCursor(bIsEnabled) end
+
+---@param oldState int
+---@param newState int
+---Ивент на смену статуса игры
+function onStateChanged(oldState, newState) end
+
+---Ивент на подключение к серверу
+function onServerJoin() end
+
+---Ивент на отключение от сервера
+function onServerQuit() end
+
+---Ивент на создание игрока в зоне стрима
+function onWorldPlayerAdd() end
+
+---Ивент на удаление игрока из зоны стрима
+function onWorldPlayerRemove() end
+
+---Ивент на смерть игрока
+function onWorldPlayerDeath() end
+
+---Ивент на создание транспорта в зоне стрима
+function onWorldVehicleAdd() end
+
+---Ивент на удаление транспорта из зоны стрима
+function onWorldVehicleRemove() end
+
+---@param nId int
+---@param nColor int
+---Ивент на установку цвета игроку
+function onSetPlayerColor(nId, nColor) end
+
+---@param nId int
+---@param szName string
+---Ивент на установку ника игроку
+function onSetPlayerName(nId, szName) end
+
+---@param bObjectID int
+---@param nObjectPointer ptr
+---@param fDrawDistance float
+---@param bNoCameraCollision bool
+---@param nAttachedObjectID int
+---@param nAttachedVehicleID int
+---@param aDataArray objectMaterialsArray
+---@param nMaterialsCount int
+---objectMaterialsArray это массив материалов наложеных на объект. Можете его перебирать через цикл for. Саму структуру objectMaterial сможете найти ниже
+function onCreateObject(bObjectID, nObjectPointer, fDrawDistance, bNoCameraCollision, nAttachedObjectID, nAttachedVehicleID, aDataArray, nMaterialsCount) end
+
+---Ивент на удаление объекта
+function onObjectDestroy() end
+
+---@param objectID int
+---@param data objectMaterial
+---Ивент на установку материала объекту
+function onSetObjectMaterial(objectID, data) end
+
+---@param playerID int
+---@param modelID int
+---Ивент на установку модели игроку
+function onSetPlayerSkin(playerID, modelID) end
+
+---@param killerID int
+---@param victimID int
+---@param weaponType int
+---Ивент на добавление сообщения в килл-лист
+function onDeathMessage(killerID, victimID, weaponType) end
+
+---Ивент на смену интерьера
+function onSetInterior() end
+
+---Ивент на включение режима спектратора
+function onTogglePlayerSpectating() end
+
+---@param nPlayerID int
+---@param nMode int
+---Ивент на включение режима спектратора на игрока
+function onPlayerSpectatePlayer(nPlayerID, nMode) end
+
+---@param nVehicleID int
+---@param nMode int
+---Ивент на включение режима спектратора на транспорт
+function onPlayerSpectateVehicle(nVehicleID, nMode) end
+
+---@param szMessage string
+---@param nColor int
+---Ивент на добавление клиентского сообщения в чат
+function onClientMessage(szMessage, nColor) end
+
+---Ивент на смену времени
+function onWorldTime() end
+
+---@param nHour int
+---@param nMinute int
+---Ивент на смену времени учитывая минуты
+function onSetTimeEx(nHour, nMinute) end
+
+---Ивент на смену погоды
+function onWeather() end
+
+---@param x float
+---@param y float
+---@param z float
+---@param radius float
+---Ивент на установку чекпоинта
+function onSetCheckpoint(x, y, z, radius) end
+
+---Ивент на отключение чекпоинта
+function onDisableCheckpoint() end
+
+---@param nType int
+---@param x float
+---@param y float
+---@param z float
+---@param targetX float
+---@param targetY float
+---@param targetZ float
+---@param radius float
+---Ивент на установку гоночного чекпоинта
+function onSetRaceCheckpoint(nType, x, y, z, targetX, targetY, targetZ, radius) end
+
+---Ивент на отключение гоночного чекпоинта
+function onDisableRaceCheckpoint() end
+
+---Ивент на выполнение JS кода ( Типо CEF и т.д )
+function onUIBrowserJSCodeExecute() end
+
+---Ивент на отправку сообщения браузеру
+function onSendUIBrowserMessage() end
+
+---Ивент на отправку команды в чат
+function onCommand() end
+
+---@param nTextDrawId int
+---@param szText string
+---Ивент на изменение текстдрава
+function onEditTextDraw(nTextDrawId, szText) end
+
+---@param nTextDrawId int
+---@param data textDrawProps
+---Ивент на создание текстдрава. Структуру textDrawProps сможете найти ниже
+function onShowTextDraw(nTextDrawId, data) end
+
+---Ивент на удаление текстдрава
+function onHideTextDraw() end
+
+---@param bIsEnabled bool
+---@param nColor int
+---Ивент на выделении текстдрава сервером
+function onIncomingSelectTextDraw(bIsEnabled, nColor) end
+
+---Ивент на выделение текстдрава юзером
+function onOutcomingSelectTextDraw() end
+
+---Ивент на отправку сообщения в чат
+function onSendChat() end
+
+---@return int nId
+---Возвращает ID локального игрока
+function sampGetLocalPlayerId() end
+
+---@param nId int
+---@return int nColor
+---Возвращает цвет игрока по его ID
+function sampGetPlayerColor(nId) end
+
+---@param nId int
+---@return string szNickName
+---Возвращает ник игрока по его ID
+function sampGetPlayerNickName(nId) end
+
+---@param nId int
+---@return bool bIsAFK
+---Проверяет находится ли игрок АФК
+function sampIsPlayerAFK(nId) end
+
+---@return bool bIsConnected
+---Проверяет подключены ли вы к серверу
+function sampIsLocalPlayerConnected() end
+
+---@param nId int
+---@return int fHealth
+---Получает хп игрока по его ID
+function sampGetPlayerHealthById(nId) end
+
+---@param nId int
+---@return int fArmor
+---Получает броню игрока по его ID
+function sampGetPlayerArmorById(nId) end
+
+---@param nId int
+---@return int nHandle
+---Получает игровой хендл игрока по его ID
+function sampGetCharHandleBySampPlayerId(nId) end
+
+---@param nHandle int
+---@return int nID
+---Получает ID игрока по его хендлу
+function sampGetPlayerIdByCharHandle(nHandle) end
+
+---@param nId int
+---@return int nHandle
+---Получает игровой хендл транспорта по его ID
+function sampGetCarHandleBySampVehicleId(nId) end
+
+---@param nHandle int
+---@return int nID
+---Получает ID транспорта по его хендлу
+function sampGetVehicleIdByCarHandle(nHandle) end
+
+---@return int nVersion
+---Возвращает текущую версию API
+function getArizonaAPIVersion() end
