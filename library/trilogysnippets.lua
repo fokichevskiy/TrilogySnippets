@@ -7987,4 +7987,4 @@ function getArizonaAPIVersion() end
 
 ---@return string szName
 ---Получает название текущего сервера
-function getArizonaAPIVersion() end
+function sampGetCurrentServerName() end
