@@ -7764,26 +7764,33 @@ function sampToggleCursor(bIsEnabled) end
 ---Ивент на смену статуса игры
 function onStateChanged(oldState, newState) end
 
+---@param nId int
 ---Ивент на подключение к серверу
-function onServerJoin() end
+function onServerJoin(nId) end
 
+---@param nId int
 ---Ивент на отключение от сервера
-function onServerQuit() end
+function onServerQuit(nId) end
 
+---@param nId int
 ---Ивент на создание игрока в зоне стрима
-function onWorldPlayerAdd() end
+function onWorldPlayerAdd(nId) end
 
+---@param nId int
 ---Ивент на удаление игрока из зоны стрима
-function onWorldPlayerRemove() end
+function onWorldPlayerRemove(nId) end
 
+---@param nId int
 ---Ивент на смерть игрока
-function onWorldPlayerDeath() end
+function onWorldPlayerDeath(nId) end
 
+---@param nId int
 ---Ивент на создание транспорта в зоне стрима
-function onWorldVehicleAdd() end
+function onWorldVehicleAdd(nId) end
 
+---@param nId int
 ---Ивент на удаление транспорта из зоны стрима
-function onWorldVehicleRemove() end
+function onWorldVehicleRemove(nId) end
 
 ---@param nId int
 ---@param nColor int
@@ -7806,8 +7813,9 @@ function onSetPlayerName(nId, szName) end
 ---objectMaterialsArray это массив материалов наложеных на объект. Можете его перебирать через цикл for. Саму структуру objectMaterial сможете найти ниже
 function onCreateObject(bObjectID, nObjectPointer, fDrawDistance, bNoCameraCollision, nAttachedObjectID, nAttachedVehicleID, aDataArray, nMaterialsCount) end
 
+---@param objectID int
 ---Ивент на удаление объекта
-function onObjectDestroy() end
+function onObjectDestroy(objectID) end
 
 ---@param objectID int
 ---@param data objectMaterial
@@ -7825,8 +7833,9 @@ function onSetPlayerSkin(playerID, modelID) end
 ---Ивент на добавление сообщения в килл-лист
 function onDeathMessage(killerID, victimID, weaponType) end
 
+---@param interiorID int
 ---Ивент на смену интерьера
-function onSetInterior() end
+function onSetInterior(interiorID) end
 
 ---Ивент на включение режима спектратора
 function onTogglePlayerSpectating() end
@@ -7846,16 +7855,18 @@ function onPlayerSpectateVehicle(nVehicleID, nMode) end
 ---Ивент на добавление клиентского сообщения в чат
 function onClientMessage(szMessage, nColor) end
 
+---@param nHour int
 ---Ивент на смену времени
-function onWorldTime() end
+function onWorldTime(nHour) end
 
 ---@param nHour int
 ---@param nMinute int
 ---Ивент на смену времени учитывая минуты
 function onSetTimeEx(nHour, nMinute) end
 
+---@param nWeather int
 ---Ивент на смену погоды
-function onWeather() end
+function onWeather(nWeather) end
 
 ---@param x float
 ---@param y float
@@ -7900,19 +7911,22 @@ function onEditTextDraw(nTextDrawId, szText) end
 ---Ивент на создание текстдрава. Структуру textDrawProps сможете найти ниже
 function onShowTextDraw(nTextDrawId, data) end
 
+---@param nTextDrawId int
 ---Ивент на удаление текстдрава
-function onHideTextDraw() end
+function onHideTextDraw(nTextDrawId) end
 
 ---@param bIsEnabled bool
 ---@param nColor int
 ---Ивент на выделении текстдрава сервером
 function onIncomingSelectTextDraw(bIsEnabled, nColor) end
 
+---@param nTextDrawId int
 ---Ивент на выделение текстдрава юзером
-function onOutcomingSelectTextDraw() end
+function onOutcomingSelectTextDraw(nTextDrawId) end
 
+---@param szMessage string
 ---Ивент на отправку сообщения в чат
-function onSendChat() end
+function onSendChat(szMessage) end
 
 ---@return int nId
 ---Возвращает ID локального игрока
@@ -7969,4 +7983,8 @@ function sampGetVehicleIdByCarHandle(nHandle) end
 
 ---@return int nVersion
 ---Возвращает текущую версию API
+function getArizonaAPIVersion() end
+
+---@return string szName
+---Получает название текущего сервера
 function getArizonaAPIVersion() end
