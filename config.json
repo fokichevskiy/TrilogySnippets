@@ -7,6 +7,6 @@
     "Lua.semantic.enable": false,
     "Lua.diagnostics.disable": [
       "lowercase-global"
-    ],
+    ]
   }
 }
